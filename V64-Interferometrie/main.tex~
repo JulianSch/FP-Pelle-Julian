@@ -6,7 +6,7 @@
   \section{Theorie}
   Das verwendete Interferometer, benannt nach Georges Sagnac, nutzt den Effekt der Interferenz zur präzisen Messung von unterschieden in der optischen Dichte verschiedener Materialien. Da zur Intereferenz zwei unterschiedliche optische Signale benötigt werden, teilt ein sogenannter polarizing beam-splitting Cubes (PBSC) den zur Untersuchung verwendeten Laserstrahl. Hierbei handelt es sich um einen durchsichtigen Würfel, welcher aus zwei Prismen zusammengesetzt ist. Die in seinem Inneren auftretende Grenzfläche sorgt für eine teilweise Reflexion des einfallenden Strahles und eine teilweise Transmission. Es treten folglich zwei Strahlen in zwei senkrecht zueinander stehende Richtungen aus dem PBSC aus. Zusätzlich sind diese Strahlen zueinander orthogonal polarisiert, d.h. es kann keine Interferenz zwischen beiden Strahlen auftreten. Dementsprecend müssen beide Strahlen vor der Detektion s.B. durch einen Polarisationsfilter auf eine gemeinsame Achse projiziert werden. Da der PBSC jedoch lediglich die im einfallenden Strahl überlagerten Polarisationen auseinanderfiltert muss der einfallende Strahl um 45° gegen die Vertikale gekippt polarisiert sein, um eine gleiche Intensität der beiden Teilstrahlen zu gewährleisten. Diese beiden STrahlen durchlauden im Interferometer einen nur geringfügig versetzten Weg, also im Gegensatz zum Michelson-Interferometer die gleichen Spiegel. Sie werden im gleichen PBSC getrennt und, nach einem geschlossenen Umlauf durchs Interferometer, wieder überlagert. Dies bildet ein sehr präzises Messgerät, da bspw. kleine produktionsunterschiede der Spiegel (z.B. unterschiedlich dickes GLas) nicht zu Unterschieden in den Strahlengängen führt. Die Qualität von Interferometern wird durch den Kontrast $K$ bestimmt. Es gilt:
   \begin{equation}
-  	\label{eqn:Kontrast}
+  	\label{eq:kontrast}
 	K = \frac{I_{max}+I_{min}}{I_{max}+I_{min}}
   \end{equation}
 Hierbei bezeichnet $I_{max}$ die Intensität der Interferenzmaxima, $I_{min}$ entsprechend die der Interferenzminima. Diese Intensität hängt stark von der Polarisation des Ursprungsstrahls ab, da gilt: $I \prop <|E_h+E_v|^2>$ und die $E$-Feld Komponenten naturgemäß abhängig sind vom Winkel des Ursprungsstrahlt $E = E_0 \cos (\omega t)$ gegen die Vertikale. OBdA wird der im Interferometer verursachte Gangunterschied $\delta$ zwischen den beiden Komponenten als Unterschied der horizontalen gegen die vertikale betrachtet. So ergibt sich
@@ -28,6 +28,7 @@ Da nur konstruktive, bzw destruktive, Interferenz betrachtet wird, gilt $\delta 
 Durch Vernachlässigung aller Vorfaktoren ergibt sich für die Proportionalität von $K$
 \begin{equation}
 	K \prop \cos(\phi)\sin(\phi)
+	
 \end{equation}
 
 Ist dieser Kontrast hinreichend groß, kann eine zuverlässige Bestimmung der Druckabhängigkeit der Brechungszahl eines optisch dünnen Gases, bzw. Gemisches, erfolgen, indem in einen Strahl eine Gaszelle der Länge L eingebracht wird. In dieser wird der Druck von $p_1$ auf $p_2$ variiert und die Anzahl $M$ der dabei auftretenden Interferenzmaxima gemessen. Hierfür gilt die Formel
@@ -36,14 +37,14 @@ Ist dieser Kontrast hinreichend groß, kann eine zuverlässige Bestimmung der Druc
 	M = \frac{\Delta n}{\lambda_{vac}} L
 \end{equation}
 bei der $\lambda_{vac}$ die Wellenlänge des Lasers bezeichnet.
-Der Brechungsindex $n_0$ bei $T_0 = \SI{273,15}{\kelvin}$ und $p_0 =  \SI{1013,2}{\milli\bar}$ ergibt sich über
+Der Brechungsindex $n_0$ bei $T_0 = \SI{273,15}{\kelvin}$ und $p_0 =  \SI{1013,2}{\milli\bar}$ ergibt sich nach \cite{Anleitung} über
 \begin{equation}
-	n(p_0,T_0)=1+ \Delta n \frac{T}{T_0} \frac{p_0}{p_2-p_1}
+	n(p_0,T_0)=1+ \Delta n \frac{T}{T_0} \frac{p_0}{p_2-p_1.
 	\label{eqn:n0}
 \end{equation}
 
 Zur Messung des Brechungsindex eines Plättchens wird eine Halterung mit zwei um $\Phi = 20°$ gegeneinander geneigte Plättchen verwendet. Jeder der beiden Strahlen durchläuft eines der beiden Plättchen und erhält damit, einmal durch den durch Brechung verlängerten Weg, einmal durch den geänderten Brechungsindex eine Phasenverschiebung. Werden die Plättchen in der optischen Ebene um $\theta$ gedreht, detektiert man wieder Interfenzmaxima $M$.
-Für eine diee Platten gilt näherungsweise für kleine WInkel
+Für eine die Platten gilt näherungsweise für kleine Winkel
 \begin{equation}
 	M = (n-1)\frac{T}{\lambda_{vac}}(1+\frac{\theta^2-\Phi^2{2n}.
 \end{equation}
@@ -139,7 +140,7 @@ Die berechneten Werte sind in Tabelle \ref{tab:plattenindex} einzusehen.\\
 \begin{table}[H]
   \center
   \caption{Gemessene Counts bei einer Drehung der Platten um ca. $\theta=10^\circ$ und Mittelwert des berechneten Brechungsindex.
-  \label{tab:plattenin
+	\label{tab:plattenindex}
   \begin{tabular}{c|c|c|c}
     Messung& Counts M& Brechungsindex n& Fehler\\
     \hline
@@ -206,6 +207,10 @@ Die WellenlÃ¤nge des Lasers betrÃ¤gt nach wie vor $\lambda_{vac}=\SI{632.99}{\na
       995& 1.006 298& 995& 1.006 298\\
     \end{tabular}
 \end{table}
+
+\section{Diskussion}
+
+
 \printbibliography
 \nocite{*}
 \end{document}
