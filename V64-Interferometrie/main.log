@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016/W32TeX)  (format=lualatex 2016.10.3)  15 MAY 2018 11:31
+This is LuaTeX, Version 0.95.0 (TeX Live 2016/W32TeX)  (format=lualatex 2016.10.3)  15 MAY 2018 11:43
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -518,7 +518,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.301 seconds)
+luaotfload | main : initialization completed in 0.238 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (c:/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -1818,12 +1818,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 \c__siunitx_mathtt_int=\count375
 (load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bol
-d.luc)
-Overfull \hbox (147.09932pt too wide) in paragraph at lines 26--26
-[] 
- []
-
-[1
+d.luc) [1
 Non-PDF special ignored!
 
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -1855,15 +1850,7 @@ nk-te der
 
 [2] [3<./Versuchsaufbau.JPG>]
 
-Package caption Warning: \label without proper reference on input line 61.
-See the caption package documentation for explanation.
-
-
 LaTeX Warning: Reference `fig:aufbau' on page 4 undefined on input line 70.
-
-
-Package caption Warning: \label without proper reference on input line 67.
-See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:bauteilpos' on page 4 undefined on input line 70.
@@ -1881,10 +1868,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 70--86
 [4
 Missing character: There is no ∘ (U+2218) in font file:lmroman10-regular:scrip
 t=latn;+trep;+tlig;!
-<./Strahlengang.JPG>] <kontrastplot.pdf, id=46, 578.16pt x 433.62pt>
-File: kontrastplot.pdf Graphic file (type pdf)
+<./Strahlengang.JPG>]
 
-<use kontrastplot.pdf>
+LaTeX Warning: Reference `tab:Kontrast' on page 5 undefined on input line 90.
+
+<kontrastplot.pdf, id=42, 578.16pt x 433.62pt>
+File: kontrastplot.pdf Graphic file (type pdf)
+ <use kontrastplot.pdf>
 Package luatex.def Info: kontrastplot.pdf used on input line 94.
 (luatex.def)             Requested size: 271.86356pt x 203.89406pt.
 
@@ -1898,6 +1888,11 @@ t=latn;+trep;+tlig;!
 Missing character: There is no ∘ (U+2218) in font file:lmroman10-regular:scrip
 t=latn;+trep;+tlig;!
 <./kontrastplot.pdf>]
+
+LaTeX Warning: Reference `fig:kontrastplot' on page 6 undefined on input line 13
+0.
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 130--132
 
  []
@@ -1909,6 +1904,13 @@ LaTeX Warning: Citation 'Anleitung' on page 6 undefined on input line 133.
 Underfull \hbox (badness 10000) in paragraph at lines 133--134
 
  []
+
+
+LaTeX Warning: Reference `eq:index' on page 6 undefined on input line 137.
+
+
+LaTeX Warning: Reference `tab:plattenindex' on page 6 undefined on input line 13
+8.
 
 LaTeX Font Info:    Font shape `EU2/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 10.00015pt on input line 141.
@@ -1928,9 +1930,21 @@ Missing character: There is no ∘ (U+2218) in font file:lmroman10-regular:scrip
 t=latn;+trep;+tlig;!
 ]
 
+LaTeX Warning: Reference `tab:druckdaten1' on page 7 undefined on input line 157
+.
+
+
+LaTeX Warning: Reference `tab:druckdaten2' on page 7 undefined on input line 157
+.
+
+
 LaTeX Warning: Reference `eq:luft' on page 7 undefined on input line 157.
 
 [7]
+
+LaTeX Warning: Reference `tab:plattenindex' on page 8 undefined on input line 21
+1.
+
 
 LaTeX Warning: Empty bibliography on input line 215.
 
@@ -1941,11 +1955,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 217.
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 217.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 217.
-Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 89FEDC6BF969D50F660F8873C1C481A7;7439.
 
+
+Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `main.aux':
+(rerunfilecheck)             Before: D973A770EADCF33DC923010816D5603D;2173
+(rerunfilecheck)             After:  89FEDC6BF969D50F660F8873C1C481A7;7439.
 
 LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -1960,13 +1981,13 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 Here is how much of LuaTeX's memory you used:
  39814 strings out of 495118
  100000,1373583 words of node,token memory allocated
- 2737 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 274 glue, 1 kern, 85 attribute, 62 glue_spec, 85 at
+ 2161 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 194 glue, 1 kern, 81 attribute, 62 glue_spec, 81 at
 tribute_list, 1 write nodes
-   avail lists: 1:3,2:932,3:146,4:31,5:279,6:2879,7:1258,8:199,9:307,10:20,11:38
+   avail lists: 1:3,2:932,3:102,4:31,5:232,6:2724,7:1247,8:197,9:293,10:20,11:38
 0
  42399 multiletter control sequences out of 65536+600000
- 78 fonts using 14166667 bytes
+ 78 fonts using 14166583 bytes
  71i,9n,104p,8836b,2457s stack positions out of 5000i,500n,10000p,200000b,100000s
 <c:/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><
 c:/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texli
@@ -1974,10 +1995,10 @@ ve/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texliv
 e/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texlive
 /2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/2016
 /texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (8 pages, 191824 bytes).
+Output written on main.pdf (8 pages, 191038 bytes).
 
-PDF statistics: 193 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
+PDF statistics: 180 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  32 named destinations out of 1000 (max. 131072)
  65 words of extra memory for PDF output out of 10000 (max. 10000000)
 
