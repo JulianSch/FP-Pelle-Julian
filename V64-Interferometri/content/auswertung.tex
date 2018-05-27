@@ -1,5 +1,5 @@
-\section{Auswertung}
-\subsection{Messung des Kontrasts der Apparatur}
+cipy}section{Auswertung}
+\subsiection{Messung des Kontrasts der Apparatur}
 Für die Ermittlung des Kontrasts des Interferometer wird ein Laser mit einer Wellenlänge von $\lambda_{vac}=\SI{623.99}{\nano\meter}$ verwendet.
 Aus den gemessenen Intensitäten wird dann mithilfe von Formel \eqref{eq:kontrast} der Kontrast berechnet.
 Die Messwerte, sowie der berechnete Kontrast sind in Tabelle \ref{tab:Kontrast} zusammengestellt.
@@ -42,8 +42,8 @@ Das Maximum des Kontrasts liegt bei einem Winkel von 60\circ.\\
   130 &  -1125.0&  -162.50& 0.7476\\
 \end{tabular}
 \end{table}
-In \ref{fig:kontrastplot} ist der Kontrast in Abhängigkeit des Drehwinkels der Platten aufgetragen und mithilfe von $curve-fit$ gefitted worden.
-Um die Messwerte optimal durch einen Fit zu approximieren wurden die Messwerte zwischen $30^\circ$ und $60^\circ$ aus dem Diagramm entfernt. Bei $90^\circ$ und $100^\circ$ sind beide Intensitäten im Hintergrundrauschen untergegangen, woraus sich der Kontrast von 0 ergibt.\\
+In \ref{fig:kontrastplot} ist der Kontrast in Abhängigkeit des Drehwinkels der Platten aufgetragen und mithilfe von $curve-fit$ \cite{scipy} an \eqref{eq:K} gefitted worden.
+Um die Messwerte optimal durch einen Fit zu approximieren wurden die Messwerte zwischen $30^\circ$ und $60^\circ$ aus dem Diagramm entfernt, da in diesem Berreich offenbar der Sättigungsbereich der verwendeten Diode erreicht wurde, d.h. die Messwerte keine quantitativen Aussagen zulassen. Bei $90^\circ$ und $100^\circ$ sind beide Intensitäten im Hintergrundrauschen untergegangen, woraus sich der Kontrast von 0 ergibt.\\
 \subsection{Berechnung des Brechungsindex der Platten}
   In der Anleitung \cite{Anleitung} finden sich zur Berechnung des Brechungsindex der Platten folgende Herstellerangaben:\\
 \begin{center}
