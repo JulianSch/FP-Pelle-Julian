@@ -39,15 +39,16 @@ Der Brechungsindex $n_0$ bei $T_0 = \SI{273,15}{\kelvin}$ und $p_0 =  \SI{1013,2
 \end{equation}
 
 Zur Messung des Brechungsindex eines Plättchens wird eine Halterung mit zwei um $\Phi = 20\circ$ gegeneinander geneigte Plättchen verwendet. Jeder der beiden Strahlen durchläuft eines der beiden Plättchen und erhält damit, einmal durch den durch Brechung verlängerten Weg, einmal durch den geänderten Brechungsindex eine Phasenverschiebung. Werden die Plättchen in der optischen Ebene um $\theta$ gedreht, detektiert man wieder Interfenzmaxima $M$.
-Für eine der Platten gilt näherungsweise für kleine Winkel
+Für eine der Platten gilt nach \cite{Anleitung} näherungsweise für kleine Winkel
 \begin{equation}
-	M = (n-1)\frac{T}{\lambda_{vac}}(1+\frac{\theta^2-\Phi^2}{2n}.
-  \label{eq:index}
+	M \approx 2 \frac{T}{\lambda_{vac}} \frac{n-1}{2n} \theta^2.
+  \label{eq:fringes}
 \end{equation}
 
 Der Brechungsindex lässt sich dann über
 \begin{equation}
-	n = \frac{2\Phi \theta T}{2\Phi \theta T-M \lambda_{vac}}.
+   \label{eq:index}
+	n = \frac{t \theta^2}{T \theta^2-M \lambda_{vac}.
 \end{equation}
 
 
