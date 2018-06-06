@@ -1,0 +1,64 @@
+\begin{document}
+\section{Theorie}
+\label{sec:Theorie}
+\subsection{Myonen und das Standardmodell}
+\label{sub:standard}
+Das Standardmodell der Teilchenphysik unterscheided zwischen Teilchen mit ganzzahligem und halbzahligem Spin. Erstere werden als Bosonen bezeichnet
+und stellen unter anderem die Teilchen der elementaren Wechselwirkungen. Letztere stellen die Elementarteilchen, Quarks und Leptonen.\\
+Myonen sind fermionische Teilchen, die der schwachen und der elektromagnetischen Wechselwirkung unterliegen und daher zu den Leptonen gehören.
+Diese setzen sich aus 3 Generationen von je 2 Teilchen zusammen.
+\begin{itemize}
+  \item[1.] Elektronen $\symup{e^-}$ und Elektron-neutrinos $\symup{\nu_e}$
+  \item[2.] Myonen $\symup{\mu^-}$ und Myon-neutrinos $\symup{\nu_\mu}$
+  \item[3.] Tauonen $\symup{\tau^-}$ und Tau-neutrinos $\symup{\nu_\tau}$
+\end{itemize}
+Die Leptonen der zweiten und dritten Generation haben im Vergleich zum Elektron eine endliche Lebensdauer und Zerfallen daher nach kurzer Zeit.
+Für das Myon beträgt die mittlere charakteristische Lebensdauer:
+\begin{center}
+  $\tau \approx \SI{2.2}{\nano\second}$
+\end{center}
+Myonen entstehen in der höheren Atmosphäre aufgrund von Streuung von einfallenden Protonen mit Teilchen in der Atmospähre. Bei diesem Prozess entstehen
+neben einer Vielzahl anderer Teilchen geladene Pionen, welche dann gemäß
+\begin{equation*}
+  \pi^+ \to \mu^+ + \nu_{\mu} \qquad \text{ und } \qquad \pi^- \to \mu^- + \bar{\nu}_{\mu}
+\end{equation*}
+In Myonen und deren Antiteilchen zerfallen, welche dann aufgrund ihrer hohen Geschwindigkeit auch am Erdboden noch detektierbar sind.\\
+Die entstandenen Myonen Zerfallen dann in einem statistischen Prozess wie folgt weiter zu Leptonen der ersten Generation.
+\begin{equation*}
+  \mu^- \to e^- + \bar{\nu}_e + \nu_\mu \qquad \text{ und } \qquad \mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu
+\end{equation*}
+\subsection{Lebensdauern von instabilen Teilchen}
+Die Lebensdauer eines instabilen Teilchens ist eine charakteristische Größe, welche sich aus dem statistisch Ablaufenden Zerfallsprozess
+des Teilchens ableiten lässt. Dabei ist zu beachten, dass der Zerfall von Teilchen unabhängig von anderen Teilchen stattfindet und die Zeit, nach
+der ein Teilchen zerfällt unabhängig von der bisherigen Lebenszeit des Teilchens ist.\\
+Die Anzahl von Teilchen, die innerhalb eines Zeitraums d$t$ zerfallen ist dann durch
+\begin{equation*}
+  \symup{d}N = -\lambda N \symup{d}t
+\end{equation*}
+ gegeben. Durch Integration und die Annahme einer großen Teilchenzahl $N$ lässt sich daraus das eponentielle Zerfallsgesetz ableiten.
+ \begin{equation}
+   \frac{N(t)}{N_0} = \exp{\left(-\lambda t\right)}
+   \label{eq:zerfall}
+ \end{equation}
+Dabei ist $\lambda$ die teilchenspezifische Zerfallskonstante, $t$ die Zeit und $N_0$ die Teilchenzahl zum Zeitpunkt $t=0$.
+Für ein Intervall $\left[t,t+\symup{d}t\right]$ kann daraus die Verteilung der Lebensdauer der Teilchen berechnet werden.
+\begin{equation*}
+  \symup{d}N(t) = N_0\lambda\exp{\left(-\lambda t\right)}\symup{d}t
+\end{equation*}
+Der Erwartungswert der Zeit $t$ liefert dabei die mittlere Lebensdauer des Teilchens und lautet
+\begin{equation}
+  \left<t\right> = \tau = \frac{1}{\lambda}
+\end{equation}\\
+\\
+Da in einem realen Experiment immer nur Stichproben von Individuallebensdauern Messen kann, treten in der Kalkulation der Verteilung einige
+statistische Probleme auf. Um dies Auszugleichen wird der Erwartungswert in der Auswertung über nicht lineare Ausgleichsrechnung bestimmt mithilfe
+der Methode der kleinsten Quadrate ermittelt werden. Die Abschätzung der Lebensdauer folgt dann durch eine Abschätzung der Messwerte der Verteilungsfunktion.
+\subsection{Myonendetektion}
+Im vorliegenen Versuch werden die Myonen mithilfe eines Szintillationsdetetektors nachgewiesen. Bei Eintritt in den Detektor deponieren die Teilchen eine
+Energie von ca. $\SI{2}{\mega\electronvolt}$ in den Szintillatrmolekülen. Diese werden dabei Angeregt und emittieren bei anschließender Rückkehr in den Ausgangszustand
+Photonen im Bereich des sichtbaren und des nahen UV Spektrums. Wenn die Myonen während des Aufenthalts im Detektor vollständig abgebremst werden, zerfallen sie
+gemäß dem in Abschnitt \ref{sub:standard} benannten Prozess. Dabei werden Elektronen frei, deren Energie sehr hoch ist, da die Masse eines Myons um den Faktor 207
+größer ist als die des Elektrons. Diese Elektronen regen wiederum Szintillatrmoleküle an welche dann einen Lichtblitz emittieren.
+Negativ geladene Myonen können nach der Abbremsung allerdings auch durch Szintillatoratome eingefangen werden und ein hochangeregtes myonisches Atom bilden.
+Das eingefangene Myon zerfällt allerdings auch nach einer modifizierten Lebensdauer, weshalb der Zerfall detektierbar bleibt.
+\end{document}

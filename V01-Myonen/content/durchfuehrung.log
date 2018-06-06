@@ -1,0 +1,52 @@
+This is LuaTeX, Version 0.95.0 (TeX Live 2016/W32TeX)  (format=lualatex 2016.10.3)  25 APR 2018 10:35
+ restricted system commands enabled.
+**durchfuehrung.tex
+(./durchfuehrung.tex
+LaTeX2e <2016/03/31> patch level 3
+Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.1 \section
+          {Durchführung}
+? 
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{D
+            urchführung}
+? 
+! Undefined control sequence.
+l.3 \subsection
+             {Aufbau des Versuchs und Justierung}
+? 
+
+! LaTeX Error: Environment figure undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \begin{figure}
+                [H]
+? x
+
+
+Here is how much of LuaTeX's memory you used:
+ 9 strings out of 495118
+ 100000,89155 words of node,token memory allocated 578 words of node memory still in use:
+   1 hlist, 1 local_par, 1 dir, 11 glue, 42 glyph, 32 glue_spec, 1 temp, 1 write
+ nodes
+   avail lists: 2:11,3:1,4:1
+ 3674 multiletter control sequences out of 65536+600000
+ 14 fonts using 418143 bytes
+ 5i,0n,4p,67b,16s stack positions out of 5000i,500n,10000p,200000b,100000s
+
+warning  (pdf backend): no pages of output.
+
+PDF statistics: 0 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 131072)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
