@@ -1,2 +1,2 @@
 Starts: 2096502
-Stops:  10868
+Stops:    10868
