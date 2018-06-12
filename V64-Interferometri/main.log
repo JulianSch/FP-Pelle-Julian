@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016/W32TeX)  (format=lualatex 2016.10.3)  3 JUN 2018 11:10
+This is LuaTeX, Version 0.95.0 (TeX Live 2016/W32TeX)  (format=lualatex 2016.10.3)  12 JUN 2018 20:50
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -525,7 +525,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.886 seconds)
+luaotfload | main : initialization completed in 0.198 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (c:/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -2047,10 +2047,12 @@ Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
 (c:/texlive/2016/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)
-)
-No file main.aux.
-
+) (./main.aux
+luatex-hyphen: loading patterns and exceptions for: german (\language4)
+luatex-hyphen: info: no hyphenation exceptions for this language
+Language ngerman already loaded; id is 8)
 \openout1 = main.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -2067,6 +2069,7 @@ LaTeX Font Info:    Checking defaults for EU2/lmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 11.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 11.
+
 (c:/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
@@ -2243,18 +2246,15 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 pg>]
 Package tocbasic Info: character protrusion at toc deactivated on input line 15.
 
+ (./main.toc)
 \tf@toc=\write5
 
 \openout5 = main.toc
  [2
 
-] (./content/theorie.tex
-
-LaTeX Warning: Reference `eq:kontrast' on page 1 undefined on input line 23.
-
-(load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-reg
-ular.luc)(load luc: C:/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmr
-oman6-regular.luc)
+] (./content/theorie.tex(load luc: C:/texlive/2016/texmf-var/luatex-cache/generi
+c/fonts/otl/lmroman8-regular.luc)(load luc: C:/texlive/2016/texmf-var/luatex-cac
+he/generic/fonts/otl/lmroman6-regular.luc)
 
 LaTeX Warning: Citation 'AltAnleitung' on page 1 undefined on input line 35.
 
@@ -2272,38 +2272,30 @@ Runaway argument?
 \par 
 l.18 \input{content/theorie.tex}
                               
-? 
-(./content/durchfuehrung.tex
-! Missing $ inserted.
-<inserted text> 
-$
-l.1 	\section
-           {Durchführung}
 ? x
 
 
 Here is how much of LuaTeX's memory you used:
- 44422 strings out of 495118
+ 44423 strings out of 495118
  100000,1648299 words of node,token memory allocated 10350 words of node memory still in use:
    106 hlist, 6 vlist, 7 rule, 84 disc, 4 local_par, 2 dir, 35 math, 293 glue, 7
 4 kern, 29 penalty, 1 choice, 10 noad, 2 math_char, 4 sub_box, 4 sub_mlist, 2 ma
 rgin_kern, 738 glyph, 153 attribute, 57 glue_spec, 153 attribute_list, 1 temp, 2
  write, 7 pdf_dest nodes
-   avail lists: 1:1,2:160,3:69,4:31,5:232,6:2670,7:496,8:27,9:126,10:15,11:365
+   avail lists: 1:1,2:158,3:70,4:31,5:232,6:2672,7:496,8:27,9:125,10:15,11:365
  46748 multiletter control sequences out of 65536+600000
  101 fonts using 22865047 bytes
  71i,9n,104p,8833b,2482s stack positions out of 5000i,500n,10000p,200000b,100000s
-<c:/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf><c:/texl
-ive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texli
-ve/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c:/texliv
-e/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/texlive/201
-6/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/2016/tex
-mf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2016/texmf-dist/f
-onts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (3 pages, 125870 bytes).
+<c:/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><
+c:/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf><c
+:/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf><c:/tex
+live/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf><c:/texlive/
+2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><c:/texlive/2016/texm
+f-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (3 pages, 124605 bytes).
 
-PDF statistics: 79 PDF objects out of 1000 (max. 8388607)
- 51 compressed objects within 1 object stream
+PDF statistics: 74 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  9 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
