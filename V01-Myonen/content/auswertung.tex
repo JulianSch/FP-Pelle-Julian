@@ -3,25 +3,38 @@
 
 
 \begin{table}
-  \caption{Werte zur zeitlichen Kalibrierung des MCA.}
+  \caption{Kanäle mit vom Doppelimpulsgenerator vorgegebenen Zeitintervallen sowie ihr Abstände}
   \label{tab:Kalibrierung}
-
+  \centering
+  \sisetup{round-mode = places , round-precision = 2,scientific-notation=fixed, fixed-exponent = 0}
+  \begin{tabular}{|S|S|}
+    \toprule
+    Kanal & Abstand \\
+    \midrule
+    0.            &  \\
+    22.16501487   & 22.16501487 \\
+    44.95410911   & 22.78909424 \\
+    67.           & 22.04589089 \\
+    89.           & 22 \\
+    111.          & 22 \\
+    133.          & 22 \\
+    155.          & 22 \\
+    177.          & 22 \\
+    199.          & 22
+    \bottomrule
+  \end{tabular}
 \end{table}
-0.
-22.16501487
-44.95410911
-67.
-89.
-111.
-133.
-155.
-177.
-199.
 
-22.16501487 22.78909424 22.04589089 22.         22.         22.
- 22.         22.         22.
+Aus den in Tab. \ref{tab:Kalibrierung} aufgeführten Werten (gemittelt aus Tab. \ref{tab:kanal} nach \eqref{eq:kanal}) ergibt sich eine Umrechnung von $22.11 \pm 0.08 \, \frac{\text{Kanäle}{\si{\micro\second}}}$.
 
- $22.11 \pm 0.08$
+
+Fit:
+403+/-9 Amplitude
+2.02+/-0.04 tau/microseconds
+2.85+/-0.29 untergrund
+
+fit mit sigma = sqrt(C)
+
 % \begin{figure}
 %   \centering
 %   \includegraphics{plot.pdf}
