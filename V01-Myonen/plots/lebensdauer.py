@@ -47,6 +47,8 @@ params, cov = curve_fit(f, t, C[:,1])
 #plt.grid()
 #plt.show()
 
+ct = params[0]
+
 params = correlated_values(params, cov)
 print('Fit(a, b): ')
 for p in params:
@@ -83,7 +85,7 @@ for i in range(2, len(c)-1):
 def e(t, a, b, d):
     return a*np.exp(-t/b)+d
 
-t = np.linspace(0,len(C)-1,len(C))/11
+t = np.linspace(0,len(C)-1,len(C))/ct*2
 #print(t)
 
 params , cov = curve_fit(e, t, C, sigma = np.sqrt(C))
@@ -99,7 +101,7 @@ for p in params:
 plt.grid()
 plt.xlabel('Microseconds')
 plt.ylabel('Counts')
-plt.yscale('log')
+#plt.yscale('log')
 #plt.yscale('log')
 
 
