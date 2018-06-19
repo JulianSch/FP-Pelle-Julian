@@ -45,9 +45,15 @@ Für eine der Platten gilt nach \cite{Anleitung} näherungsweise für kleine Win
   \label{eq:fringes}
 \end{equation}
 
-Der Brechungsindex lässt sich dann über
+Bei Verwendung zweier Platten, welche in jeweils einen der zwei umlaufenden Strahlengänge eingebracht werden und im Winkel $2\delta$ zueinander angebracht sind, muss diese Formel entsprechend angepasst werden.
+Eine Taylorentwicklung von \eqref{eq:fringes} um einen Winkel $\pm \delta$ und anschließendes bilden der Differenz der beiden entstehenden Terme für $+\delta$, bzw. $-\delta$ ergeben dann
 \begin{equation}
-   \label{eq:index}
-	n = \frac{T \theta^2}{T \theta^2-M \lambda_{vac}}.
+  M \approx 2\frac{T}{\lambda_{vac}}\frac{n-1}{n} \delta \theta.
+\end{equation}
+
+Durch Umstellen erhält man
+\begin{equation}
+  n = \left(1-\frac{\lambda_{vac}M}{2T\delta \theta}\right)^-1
+  \label{eq:index}
 \end{equation}
 % von Julian benutzte formel zur auswertung : n = \frac{T\theta^2}{T\theta^2 - M\lambda_{vac}}
