@@ -7,7 +7,7 @@
   \centering
   \begin{tabular}{|S|S|}
     \toprule
-    t_{links}/\si{\nano \seconds} & t_{rechts}/\si{\nano \seconds}\\
+    $t_{links}/\si{\nano \second}$ & $t_{rechts}/\si{\nano \second}$\\
     6,6 & 10,2 \\
     8,6 & 7,8 \\
     8,2 & 10,4 \\
@@ -17,18 +17,19 @@
     10,6 & 8,4 \\
     8,6 & 12,0 \\
     10,4 & 7,6 \\
-    11,0 & 10,0
+    11,0 & 10,0 \\
+    \toprule
   \end{tabular}
 \end{table}
 
-Nach Hinzuschalten der Diskriminatoren beträgt $t_{links}= \SI{19,6}{\nano\seconds}$ und $t_{rechts} = \SI{19,0}{\nano \seconds}$. Die Diskriminatoren sind hierbei so aufeinander abgestimmt, dass sich ihre Ereignisfrequenzen nur um $\Delta_f = \SI{0,05}{\hertz}$ unterscheiden. Ihre Ereignisfrequenzen liegen bei $f_{links} = \SI{38.27}{\hertz}$, bzw. $f_{rechts}= \SI{38,22}{\hertz}$.
+Nach Hinzuschalten der Diskriminatoren beträgt $t_{links}= \SI{19,6}{\nano\second}$ und $t_{rechts} = \SI{19,0}{\nano \second}$. Die Diskriminatoren sind hierbei so aufeinander abgestimmt, dass sich ihre Ereignisfrequenzen nur um $\Delta_f = \SI{0,05}{\hertz}$ unterscheiden. Ihre Ereignisfrequenzen liegen bei $f_{links} = \SI{38.27}{\hertz}$, bzw. $f_{rechts}= \SI{38,22}{\hertz}$.
 
 \begin{table}
   \caption{Nach der Koinzidenzschaltung registrierte Ereignisse in Abhängigkeit der relativen Verzögerung der Signale zueinander.}
   \label{tab:koinzidenz}
   \begin{tabular}{|S|S|S|}
     \toprule
-    $t_{VZ}/\si{\nano\seconds}$ & Ereignisse & Messzeit/$\si{\seconds}$ \\
+    $t_{VZ}/\si{\nano\second}$ & $\text{Ereignisse}$ & $\text{Messzeit}/\si{\second}$ \\
     \midrule
     0.0 & 421 & 20.22 \\
     16.0 & 422 & 21.39  \\
@@ -50,11 +51,12 @@ Nach Hinzuschalten der Diskriminatoren beträgt $t_{links}= \SI{19,6}{\nano\seco
     -10.0 & 449 & 20.23 \\
     1.0 & 479 & 20.59 \\
     -12.0 & 426 & 20.10 \\
-    0.0 & 463 20.05
+    0.0 & 463 20.05 \\
+    \bottomrule
   \end{tabular}
 \end{table}
 
-Für die relative Verzögerungszeit $t_{VZ}= \SI{0.0}{\nano\seconds}$ wurden zwei Messwerte aufgenommen, da sie sich sehr nah am gemessenen Maximum von $t_{VZ}= \SI{1.0}{\nano\seconds}$ befindet und die erste Messung einen recht stark abweichenden Wert zeigt, obwohl ein ausgeprägtes Platau erwartet wird.
+Für die relative Verzögerungszeit $t_{VZ}= \SI{0.0}{\nano\second}$ wurden zwei Messwerte aufgenommen, da sie sich sehr nah am gemessenen Maximum von $t_{VZ}= \SI{1.0}{\nano\second}$ befindet und die erste Messung einen recht stark abweichenden Wert zeigt, obwohl ein ausgeprägtes Platau erwartet wird.
 
 \begin{table}
   \caption{Kanäle mit vom Doppelimpulsgenerator vorgegebenen Zeitintervallen sowie ihr Abstände}
@@ -63,7 +65,7 @@ Für die relative Verzögerungszeit $t_{VZ}= \SI{0.0}{\nano\seconds}$ wurden zwe
   \sisetup{round-mode = places , round-precision = 2,scientific-notation=fixed, fixed-exponent = 0}
   \begin{tabular}{|S|S|}
     \toprule
-    Kanal & Abstand \\
+    $\text{Kanal}$ & $\text{Abstand}$ \\
     \midrule
     0.            &  \\
     22.16501487   & 22.16501487 \\
@@ -74,17 +76,17 @@ Für die relative Verzögerungszeit $t_{VZ}= \SI{0.0}{\nano\seconds}$ wurden zwe
     133.          & 22 \\
     155.          & 22 \\
     177.          & 22 \\
-    199.          & 22
+    199.          & 22 \\
     \bottomrule
   \end{tabular}
 \end{table}
 
-Aus den in Tab. \ref{tab:Kalibrierung} aufgeführten Werten (gemittelt aus Tab. \ref{tab:kanal} nach \eqref{eq:kanal}) ergibt sich eine Umrechnung von $22.11 \pm 0.08 \, \frac{\text{Kanäle}{\si{\micro\second}}}$.
+Aus den in Tab. \ref{tab:Kalibrierung} aufgeführten Werten (gemittelt aus Tab. \ref{tab:kanal} nach \eqref{eq:kanal}) ergibt sich eine Umrechnung von $22.11 \pm 0.08 \, \frac{\text{Kanäle}}{\si{\micro\second}}$.
 
 
 Fit:
 403+/-9 Amplitude
-2.02+/-0.04 tau/microseconds
+2.02+/-0.04 tau/microsecond
 2.85+/-0.29 untergrund
 
 fit mit sigma = sqrt(C)
