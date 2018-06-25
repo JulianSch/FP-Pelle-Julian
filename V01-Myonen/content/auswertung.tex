@@ -1,6 +1,60 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\begin{table}
+  \caption{Länge der vom linken, bzw. rechten, Detektor ausgegebenen Impulse ohne Hinzuschalten eines Diskriminators}
+  \label{tab:oD}
+  \centering
+  \begin{tabular}{|S|S|}
+    \toprule
+    t_{links}/\si{\nano \seconds} & t_{rechts}/\si{\nano \seconds}\\
+    6,6 & 10,2 \\
+    8,6 & 7,8 \\
+    8,2 & 10,4 \\
+    10,0 & 7,6 \\
+    14,0 & 9,4 \\
+    9,0 & 11,8 \\
+    10,6 & 8,4 \\
+    8,6 & 12,0 \\
+    10,4 & 7,6 \\
+    11,0 & 10,0
+  \end{tabular}
+\end{table}
+
+Nach Hinzuschalten der Diskriminatoren beträgt $t_{links}= \SI{19,6}{\nano\seconds}$ und $t_{rechts} = \SI{19,0}{\nano \seconds}$. Die Diskriminatoren sind hierbei so aufeinander abgestimmt, dass sich ihre Ereignisfrequenzen nur um $\Delta_f = \SI{0,05}{\hertz}$ unterscheiden. Ihre Ereignisfrequenzen liegen bei $f_{links} = \SI{38.27}{\hertz}$, bzw. $f_{rechts}= \SI{38,22}{\hertz}$.
+
+\begin{table}
+  \caption{Nach der Koinzidenzschaltung registrierte Ereignisse in Abhängigkeit der relativen Verzögerung der Signale zueinander.}
+  \label{tab:koinzidenz}
+  \begin{tabular}{|S|S|S|}
+    \toprule
+    $t_{VZ}/\si{\nano\seconds}$ & Ereignisse & Messzeit/$\si{\seconds}$ \\
+    \midrule
+    0.0 & 421 & 20.22 \\
+    16.0 & 422 & 21.39  \\
+    20.0 & 285 & 20.20 \\
+    22.0 & 174 & 20.24 \\
+    23.0 & 116 & 19.96 \\
+    23.5 & 85 & 20.06 \\
+    -8.0 & 470 & 20.36 \\
+    -40.0 & 14 & 20.45 \\
+    8.0 & 441 & 19.98 \\
+    12.0 & 451 & 20.05 \\
+    -24.0 & 10  & 20.42 \\
+    -28.0 & 10 & 20.42 \\
+    -20.0 & 169 & 20.03 \\
+    -22.0 & 63 & 20.16 \\
+    -18.0 & 282 &20.30 \\
+    -17.0 & 301 & 20.15 \\
+    -19.0 & 211 & 20.40 \\
+    -10.0 & 449 & 20.23 \\
+    1.0 & 479 & 20.59 \\
+    -12.0 & 426 & 20.10 \\
+    0.0 & 463 20.05
+  \end{tabular}
+\end{table}
+
+Für die relative Verzögerungszeit $t_{VZ}= \SI{0.0}{\nano\seconds}$ wurden zwei Messwerte aufgenommen, da sie sich sehr nah am gemessenen Maximum von $t_{VZ}= \SI{1.0}{\nano\seconds}$ befindet und die erste Messung einen recht stark abweichenden Wert zeigt, obwohl ein ausgeprägtes Platau erwartet wird.
 
 \begin{table}
   \caption{Kanäle mit vom Doppelimpulsgenerator vorgegebenen Zeitintervallen sowie ihr Abstände}
