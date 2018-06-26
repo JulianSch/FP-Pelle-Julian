@@ -8,6 +8,7 @@
   \begin{tabular}{|S|S|}
     \toprule
     $t_{links}/\si{\nano \second}$ & $t_{rechts}/\si{\nano \second}$\\
+    \midrule
     6,6 & 10,2 \\
     8,6 & 7,8 \\
     8,2 & 10,4 \\
@@ -27,6 +28,7 @@ Nach Hinzuschalten der Diskriminatoren beträgt $t_{links}= \SI{19,6}{\nano\seco
 \begin{table}
   \caption{Nach der Koinzidenzschaltung registrierte Ereignisse in Abhängigkeit der relativen Verzögerung der Signale zueinander.}
   \label{tab:koinzidenz}
+  \centering
   \begin{tabular}{|S|S|S|}
     \toprule
     $t_{VZ}/\si{\nano\second}$ & $\text{Ereignisse}$ & $\text{Messzeit}/\si{\second}$ \\
@@ -83,6 +85,12 @@ Für die relative Verzögerungszeit $t_{VZ}= \SI{0.0}{\nano\second}$ wurden zwei
 
 Aus den in Tab. \ref{tab:Kalibrierung} aufgeführten Werten (gemittelt aus Tab. \ref{tab:kanal} nach \eqref{eq:kanal}) ergibt sich eine Umrechnung von $22.11 \pm 0.08 \, \frac{\text{Kanäle}}{\si{\micro\second}}$.
 
+\begin{figure}
+  \centering
+  \includegraphics{./plots/lebensdauer.pdf}
+  \caption{Gemessene Individuallebensdauern der detektierten Myonen}
+  \label{fig:tau}
+\end{figure}
 
 Fit:
 403+/-9 Amplitude

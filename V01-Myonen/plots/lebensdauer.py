@@ -99,6 +99,7 @@ for p in params:
     print(p)
 
 plt.grid()
+plt.legend(loc = 'best')
 plt.xlabel('Microseconds')
 plt.ylabel('Counts')
 #plt.yscale('log')
