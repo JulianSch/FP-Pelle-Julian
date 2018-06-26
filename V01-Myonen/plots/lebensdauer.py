@@ -66,29 +66,22 @@ print('halfed =', m/2, '+-', sigma/2)
 ########################################
 print('Lebensdauerbestimmung: ')
 counts = np.genfromtxt('lebensdauer.txt')
-i=2
-c= np.array([counts[0]+counts[1]])
-#print(c)
-while i < len(counts):
-    c = np.append(c, [counts[i]+counts[i+1]])
-    #print(c, i)
-    i+=2
 
+#print(c
 #print(len(c))
 #print(c)
-C = c[1]
-for i in range(2, len(c)-1):
-    if c[i] > 0:
-        C = np.append(C,c[i])
+C = np.array([counts[2]])
+for i in range(3, 401):
+    C = np.append(C,counts[i])
 #print(C)
 #print(len(C))
 def e(t, a, b, d):
     return a*np.exp(-t/b)+d
 
-t = np.linspace(0,len(C)-1,len(C))/ct*2
+t = np.linspace(0,len(C)-1,len(C))/ct
 #print(t)
 
-params , cov = curve_fit(e, t, C, sigma = np.sqrt(C))
+params , cov = curve_fit(e, t, C)
 
 plt.plot(t,C, 'y.', label = 'Messwerte')
 plt.plot(t, e(t, *params), 'b-', label = 'fit')
@@ -100,7 +93,7 @@ for p in params:
 
 plt.grid()
 plt.legend(loc = 'best')
-plt.xlabel('Microseconds')
+plt.xlabel(r'$t/\mu s$')
 plt.ylabel('Counts')
 #plt.yscale('log')
 #plt.yscale('log')
