@@ -76,12 +76,14 @@ Diese Behandlung soll das "Verschmieren" der Kalibrierungsbalken minimieren.\\
 Um die Untergrundrate der Messung zu bestimmen muss zunächst die Anzahl der den Tank durchquerenden Myonen berechnet werden.
 \begin{equation}
   \bar{N} = \frac{N_{\symup{Start}}}{T_{\symup{gesamt}}}
+  \label{eqn:barN}
 \end{equation}
 %$ N_{\symup{Start}} $ ist hier die Anzahl der Startimpulse und $T_{\symup{gesamt}}$ die gesamte Messzeit.
 Während der Suchzeit $T_S$ durchqueren dann $n = \bar{N} \cdot T_S$ Myonen den Tank. Die Wahrscheinlichkeit für genau $n$ Teilchen während dieser Zeit ist dabei poissonverteilt.
 Die Anzahl der Fehlmessungen $N_{\symup{fehl}}$ ergibt sich aus der Multiplikation der Wahrscheinlichkeitsverteilung mit der Anzahl der Startimpulse. Dies entspricht genau dem Fall, dass während der Suchzeit zwei Myonen direkt aufeinander folgend in den Detektor eintreten.
 \begin{equation}
   N_{\symup{fehl}} = \bar{N} \cdot T_S \cdot \exp{-\bar{N} \cdot N_{\symup{Start}}}
+  \label{eqn:Nfehl}
 \end{equation}
 $N_{\symup{Start}}$ ist dabei ebenfalls mit einem Poissonfehler behaftet. Aufgrund der statistischen Unabhängigkeit ergibt sich für die Untergrundrate schließlich der Zusammenhang:
 \begin{equation}

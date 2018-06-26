@@ -103,3 +103,20 @@ plt.legend(loc='best')
 plt.savefig('lebensdauer.pdf')
 plt.clf()
 #logcounts = np.log(counts)
+
+No= 2096502
+T = 96454
+N = No/T
+print('N', N)
+
+n = N*20*10**(-6)
+
+print (n)
+
+nfehl = N*20*10**(-6)*No*np.exp(-n)
+
+print(nfehl)
+
+U = nfehl/512
+
+print('U', U)
