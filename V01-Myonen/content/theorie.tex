@@ -60,9 +60,19 @@ statistische Probleme auf. Um dies Auszugleichen wird der Erwartungswert in der 
 der Methode der kleinsten Quadrate ermittelt werden. Die Abschätzung der Lebensdauer folgt dann durch eine Abschätzung der Messwerte der Verteilungsfunktion.
 \subsection{Myonendetektion}
 Im vorliegenen Versuch werden die Myonen mithilfe eines Szintillationsdetetektors nachgewiesen. Bei Eintritt in den Detektor deponieren die Teilchen eine
-Energie von ca. $\SI{2}{\mega\electronvolt}$ in den Szintillatrmolekülen. Diese werden dabei Angeregt und emittieren bei anschließender Rückkehr in den Ausgangszustand
+Energie von ca. $\SI{2}{\mega\electronvolt}$ in den Szintillatormolekülen. Diese werden dabei Angeregt und emittieren bei anschließender Rückkehr in den Ausgangszustand
 Photonen im Bereich des sichtbaren und des nahen UV Spektrums. Wenn die Myonen während des Aufenthalts im Detektor vollständig abgebremst werden, zerfallen sie
 gemäß dem in Abschnitt \ref{sub:standard} benannten Prozess. Dabei werden Elektronen frei, deren Energie sehr hoch ist, da die Masse eines Myons um den Faktor 207
-größer ist als die des Elektrons. Diese Elektronen regen wiederum Szintillatrmoleküle an welche dann einen Lichtblitz emittieren.
+größer ist als die des Elektrons. Diese Elektronen regen wiederum Szintillatormoleküle an welche dann einen Lichtblitz emittieren.
 Negativ geladene Myonen können nach der Abbremsung allerdings auch durch Szintillatoratome eingefangen werden und ein hochangeregtes myonisches Atom bilden.
 Das eingefangene Myon zerfällt allerdings auch nach einer modifizierten Lebensdauer, weshalb der Zerfall detektierbar bleibt.
+\subsection{Theoretische Vorbereitung zur Auswertung mithilfe des Vielkanalanalysators}
+\label{Vka}
+Um die im Vielkanalanalysator (siehe Abb. \ref{Aufbau}) ankommenden Signale sinnvoll auszuwerten werden die bei der Kalibrierung aufgenommenen Messwerte aus benachbarten Kanälen
+gemittelt. Dies geschieht mit der Formel
+\begin{equation}
+  C=\frac{(C_1 N_1)+(C_2 N_2)}{N_1+N_2}
+  \label{kanalmittel}
+\end{equation}
+$C_1$ und $C_2$ sind dabei zwei benachbarte Kanäle und $N_1$ und $N_2$ die zugehörigen Counts.\\
+Diese Behandlung soll das "Verschmieren" der Kalibrierungsbalken minimieren.
