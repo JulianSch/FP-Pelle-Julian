@@ -1,6 +1,6 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-
+\subsection{Kalibrierung}
 \begin{table}
   \caption{Länge der vom linken, bzw. rechten, Detektor ausgegebenen Impulse ohne Hinzuschalten eines Diskriminators}
   \label{tab:oD}
@@ -60,6 +60,29 @@ Nach Hinzuschalten der Diskriminatoren beträgt $t_{links}= \SI{19,6}{\nano\seco
 
 Für die relative Verzögerungszeit $t_{VZ}= \SI{0.0}{\nano\second}$ wurden zwei Messwerte aufgenommen, da sie sich sehr nah am gemessenen Maximum von $t_{VZ}= \SI{1.0}{\nano\second}$ befindet und die erste Messung einen recht stark abweichenden Wert zeigt, obwohl ein ausgeprägtes Platau erwartet wird.
 
+
+\begin{table}
+  \caption{Unbearbeitete Messwerte zur Kalibrierung des Vielkanalanalysators}
+  \centering
+  \label{tab:Kanal}
+    \begin{tabular}{|S|S|S|}
+      \hline
+      $t/\si{\micro\second}$ & $\text{Kanal}$ & $\text{Counts}$ \\ \hline
+
+      1 & 22 & 5055 \\
+      1 & 23 & 999 \\ \hline
+      2 & 44 & 196 \\
+      2 & 45 & 4075 \\ \hline
+      3 & 67 & 3815 \\ \hline
+      4 & 89 & 4863 \\ \hline
+      5 & 111 & 5904 \\ \hline
+      6 & 133 & 5612 \\ \hline
+      7 & 155 & 899 \\ \hline
+      8 & 177 & 6509 \\ \hline
+      9 & 200 & 7437 \\\hline
+    \end{tabular}
+\end{table}
+
 \begin{table}
   \caption{Kanäle mit vom Doppelimpulsgenerator vorgegebenen Zeitintervallen sowie ihr Abstände}
   \label{tab:Kalibrierung}
@@ -83,7 +106,9 @@ Für die relative Verzögerungszeit $t_{VZ}= \SI{0.0}{\nano\second}$ wurden zwei
   \end{tabular}
 \end{table}
 
-Aus den in Tab. \ref{tab:Kalibrierung} aufgeführten Werten (gemittelt aus Tab. \ref{tab:kanal} nach \eqref{eq:kanal}) ergibt sich eine Umrechnung von $22.11 \pm 0.08 \, \frac{\text{Kanäle}}{\si{\micro\second}}$.
+Aus den in Tab. \ref{tab:Kalibrierung} aufgeführten Werten (gemittelt aus Tab. \ref{tab:kanal} nach \eqref{eq:kanal}) ergibt sich eine Umrechnung von $(22.11 \pm 0.08) \, \frac{\text{Kanäle}}{\si{\micro\second}}$.
+
+\subsection{Messung der Individuallebensdauern kosmischer Myonen}
 
 \begin{figure}
   \centering
@@ -92,13 +117,16 @@ Aus den in Tab. \ref{tab:Kalibrierung} aufgeführten Werten (gemittelt aus Tab. 
   \label{fig:tau}
 \end{figure}
 
-Fit:
-403+/-9 Amplitude
-2.02+/-0.04 tau/microsecond
-2.85+/-0.29 untergrund
 
-fit mit sigma = sqrt(C)
+Ein mittels $matplotlib$ \cite{matplotlib} über die Methode der kleinsten Quadrate durchgeführter Fit der mit $\sigma = \sqrt{C}$ fehlerbehafteten Werte der Individuallebensdauern (dargestellt in Abb. \ref{fig:tau}) an eine Exponentialfunktion liefert folgende Werte:
+\begin{align*}
+  \tau &= \SI{2.02 \pm 0.04}{\micro\second} \\
+  U &= 2.85 \pm 0.29 \\
+  A &= 403 \pm 9
+\end{align*}
 
+Hierbei bezeichnet $U$ einen konstanten Untergrund aus zufällig, gleichverteilt auftretenden Ereignissen und $A$ als Ordinatenabschnitt. Hierbei ist zu beachten, dass, da es gerade bei den selten auftretenden langen Lebensdauern auch leere Kanäle gab, je zwei Kanäle zusammengelegt sind, da es ansonsten zu Problemen bei der Auswertung der Daten kommt.
+Zudem wurden die ebenfalls leeren ersten beiden Kanäle, sowie die Kanäle 401 bis 511, bei der Auswertung der Daten vernachlässigt. Die ersten beiden Kanäle decken eine Zeit von ca. $t_{tot} = \SI{0.09}{\micro \seconds}$ ab.
 % \begin{figure}
 %   \centering
 %   \includegraphics{plot.pdf}
