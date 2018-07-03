@@ -55,7 +55,14 @@ Durch Näherung des Integrals wird dieser Ausdruck zu Beginn der Stromkurve\ref{
   \label{eqn:dichtefertig}
 \end{equation}
 beschrieben.
-Der das Maximum des Stromverlaufs rührt daher, dass der Strom durch den Abfall von $\tau(T)$ mit steigender Temperatur zunächst zunimmt, allerdings fällt die Relaxationsrate stetig gemäß \eqref{eqn:dN}.
+
+\begin{figure}
+  \includegraphics{./logos/Strom_theorie.PNG}
+  \caption{Erwarteter qualtativer Verlauf des Depolarisationsstromes $i(t)$.\cite{Anleitung}}
+  \label{}
+\end{figure}
+
+Der das Maximum des Stromverlaufs rührt daher, dass der Strom durch den Abfall von $\tau(T)$ mit steigender Temperatur zunächst zunimmt, allerdings fällt die Relaxationsrate stetig gemäß \eqref{eqn:dN}. Es kann ein zweites Maximum auftreten, welches durch weitere Relaxationen mit höherem $W$ hervorgerufen wird.
 Ohne das Integral zu nähern lässt sich $\tau(T)$ durch Integration des Stromes nach
 \begin{equation}
   \tau(T) = \frac{\int_{T}^{\infty}i(T')\symup{d}T'}{bi(T)}
@@ -65,7 +72,7 @@ berechnen.
 Aus einem gemessenen Verlauf $i(T)$ lässt sich somit $W$ durch die Steigung einer linearen Ausgleichsgeraden an die logarithmierten Verläufe von \eqref{eqn:tau2}, bzw. \eqref{eqn:dichtefertig}, bestimmen.
 Zur Bestimmung von $\tau_0$ betrachtet man die Lage des Maximums von $i(T)$. Dieses liegt nach \eqref{eqn:jKomplett} bei
 \begin{equation}
-  \tau_{max}{T} = \frac{bkT_{max}^2}{W}.
+  \tau_{max}(T) = \frac{bkT_{max}^2}{W}.
   \label{eqn:tau3}
 \end{equation}
 Mit Hilfe dieses Wertes und \eqref{eqn:relaxation} lässt sich nun $\tau_0$ berechnen.
