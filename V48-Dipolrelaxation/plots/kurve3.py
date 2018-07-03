@@ -21,7 +21,7 @@ print(diff)
 print(np.mean(diff))
 print(stats.sem(diff))
 
-plt.plot(T1, I1, 'g.', label='Erste Messreihe')
+plt.plot(T1, I1, 'r.', label='Erste Messreihe')
 
 # plt.savefig('kurve2.pdf')
 
@@ -38,7 +38,7 @@ print(np.mean(diff))
 print(stats.sem(diff))
 
 
-plt.plot(T2, I2, 'r.', label='Zweite Messreihe')
+plt.plot(T2, I2, 'g.', label='Zweite Messreihe')
 plt.xlabel('T in K')
 plt.ylabel('I in pA')
 plt.grid()

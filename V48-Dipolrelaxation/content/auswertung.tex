@@ -39,3 +39,50 @@ die Austrittsarbeiten berechnet. Die berechneten Arbeiten lauten:
 \begin{center}
   $W_1 = \SI{0.78e-19}{\joule}$ und $W_2 = \SI{0.75e-19}{\joule}$
 \end{center}
+\subsection{Berechnung der Aktivierungsenergie durch Integrieren}
+
+Die mittleren Relaxationszeiten der Probe wurden durch \eqref{eqn:tau2} unter Zuhilfenahme riemannscher Integration berechnet und in Abb. \ref{fig:integral} dargestellt. Hierbei wurde der zweite Anstieg jeweils nicht betrachtet.
+
+\begin{figure}
+  \centering
+  \includegraphics{./plots/integral.pdf}
+  \caption{Mittlere Lebensdauern $\tau(T)$ der Probe in Abhängigkeit der Temperatur $T$.}
+  \label{fig:integral}
+\end{figure}
+
+Eine lineare Ausgleichsrechnung von $\ln(\tau(T)\cdot H)$ augetragen gegen $1/T$ (siehe Abb. \ref{fig:log}) liefert
+\begin{center}
+  $m_1 = \SI{7417 \pm 426}{\kelvin}$ und $b_1 = -25.5\pm1.6$
+\end{center}
+für die erste Messung. $m$ bezeichnet hierbei die Steigung der Geraden, $b$ den Ordonatenabschnitt.
+Es ergibt sich hierdurch
+\begin{equation*}
+  W_1^i = k_b m_1 = \SI{102 \pm 6}{\zepto\joule}.
+\end{equation*}
+
+\begin{figure}
+  \includegraphics{./plots/log.pdf}
+  \caption{}
+  \label{fig:log}
+\end{figure}
+
+Für die zweite Messreihe ergibt sich entsprechend:
+\begin{center}
+  $m_2 =  \SI{6713 \pm 324}{\kelvin}$, $b_2=-23.7 \pm 1.3$, $W_2^i= \SI{93 \pm 4}{\zepto\joule}$
+\end{center}
+
+\subsection{Bestimmung der charakteristischen Relaxationszeit}
+Als Maxima wurden gewählt:
+\begin{center}
+  $T_{max,1} = \SI{-8.8}{\celsius}$ und $T_{max,2} = \SI{-16.7}{\celsius}$
+\end{center}
+Nach Verrechnung dieser Werte, sowie $W_1$ bzw. $W_2$, ergibt sich gemäß \eqref{eqn:tau3}:
+\begin{center}
+  $\tau_{max,1}=  \SI{177\pm 10}{\second}$ und $\tau_{max,2}=  \SI{466\pm23}{\second}$
+\end{center}
+
+Dieser Werte lassen sich wiederrum durch \eqref{eqn:relaxation} in $\tau_0$ überführen.
+Dies liefert
+\begin{center}
+  $\tau_{0,1}= \SI{0.12 \pm 0.19}{\nano\second}$ und $\tau_{0,2} = \SI{2.0 \pm 2.6}{\nano\second}$.
+\end{center}

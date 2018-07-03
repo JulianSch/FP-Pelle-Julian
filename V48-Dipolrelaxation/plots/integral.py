@@ -4,6 +4,7 @@ import scipy.constants as const
 import scipy.stats as stats
 from scipy.optimize import curve_fit
 from uncertainties import correlated_values, correlation_matrix, ufloat
+import uncertainties.unumpy as unp
 
 
 def riemann(temp, strom, b, e):
@@ -71,23 +72,29 @@ for i in range(18,49):
 
 print(len(int1))
 print(len(int2))
-b1 = 3.2
-b2 = 1.26
-tau1 = int1/(b1*I1[1:13])
+b1 = 3.2/60   #Kelvin*sekunde^-1
+b2 = 1.26/60
+
+print('b1= ', b1)
+print('b2 = ', b2)
+tau1 = int1/(b1*I1[0:12]) #Kelvin*picoAmpere*kelvin^-1*sekunde*picoampere^-1=sekunde
 tau2 = int2/(b2*I2[18:49])
+
+print('taumax1= ', tau1[7])
+
 
 plt.plot(T1[1:13],tau1, 'r.', label='Erste Messreihe')
 plt.plot( T2[18:49], tau2, 'g.', label='Zweite Messreihe')
 
 plt.xlabel('T/K')
-plt.ylabel(r'$\tau$/ps')
+plt.ylabel(r'$\tau$/s')
 plt.grid()
 plt.legend(loc='best')
 plt.savefig('integral.pdf')
 plt.clf()
 
 Tau1 = np.log(tau1*b1)
-Tau2 = np.log(tau2*b1)
+Tau2 = np.log(tau2*b2)
 t1 = 1/T1[1:13]
 t2 = 1/T2[18:49]
 
@@ -97,6 +104,7 @@ params1,cov1 = curve_fit(f,t1,Tau1)
 Params1 = correlated_values(params1, cov1)
 print('m,b = ',Params1)
 k = ufloat(const.k,0)
+print('kb=', k)
 w1 = k*Params1[0]
 print('W1=', w1)
 plt.plot(t1, Tau1, 'r.', label ='Erste Messreihe')
@@ -105,17 +113,33 @@ plt.plot(t1, f(t1,*params1), 'r--', label ='Erster Fit')
 params2,cov2 = curve_fit(f,t2,Tau2)
 Params2 = correlated_values(params2, cov2)
 print('m,b = ',Params2)
-k = ufloat(const.k,0)
 w2 = k*Params2[0]
 print('W2=', w2)
-plt.plot(t2, Tau2, 'g.', label ='Erste Messreihe')
-plt.plot(t2, f(t2,*params2), 'g--', label ='Erster Fit')
+plt.plot(t2, Tau2, 'g.', label ='Zweite Messreihe')
+plt.plot(t2, f(t2,*params2), 'g--', label ='Zweiter Fit')
 plt.xlabel('1/(T/K)')
 plt.ylabel(r'$\ln(\tau\cdot H)$')
 plt.grid()
 plt.legend(loc='best')
 plt.savefig('log.pdf')
+plt.clf()
 
+Tmax1 = T1[7]
+Tmax2 = T2[32]
+print('Tmax1= ', Tmax1)
+print('Tmax2= ', Tmax2)
+
+taumax1 = (Tmax1*Tmax1)*k/w1/b1
+taumax2 = (Tmax2*Tmax2)*k/w2/b2
+
+print('taumax1= ', taumax1)
+print('taumax2= ', taumax2)
+
+tau01=taumax1*unp.exp(-w1/(k*Tmax1))
+tau02=taumax2*unp.exp(-w2/(k*Tmax2))
+
+print('tau01= ', tau01)
+print('tau02= ', tau02)
 #Int1 = riemann(T1,I1,1, T1.size)
 #Int2 = riemann(T2,I2,1, T2.size)
 #print('Int(I1)= ',Int1)
