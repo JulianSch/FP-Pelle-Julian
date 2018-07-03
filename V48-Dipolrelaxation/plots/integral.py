@@ -80,6 +80,14 @@ print('b2 = ', b2)
 tau1 = int1/(b1*I1[0:12]) #Kelvin*picoAmpere*kelvin^-1*sekunde*picoampere^-1=sekunde
 tau2 = int2/(b2*I2[18:49])
 
+i1 = I1[0:12]
+i2 = I2[18:49]
+while len(tau1):
+    tau1 = np.append(tau1, 0)
+    i1 = np.append(i1, 0)
+
+np.savetxt('tautab.txt',np.column_stack([tau1,T1[0:12],tau2,T2[18:49]]), delimiter=' & ',newline= r'\\'+'\n' )
+
 print('taumax1= ', tau1[7])
 
 
