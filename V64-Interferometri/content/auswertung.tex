@@ -1,6 +1,6 @@
 \section{Auswertung}
 \subsection{Messung des Kontrasts der Apparatur}
-Für die Ermittlung des Kontrasts des Interferometer wird ein Laser mit einer Wellenlänge von $\lambda_{vac}=\SI{623.99}{\nano\meter}$ verwendet.
+Für die Ermittlung des Kontrasts des Interferometer wird ein Laser mit einer Wellenlänge von $\lambda_{vac}=\SI{623.99}{\nano\meter}$\cite{Anleitung} verwendet.
 Aus den gemessenen Intensitäten wird dann mithilfe von Formel \eqref{eq:kontrast} der Kontrast berechnet.
 Die Messwerte, sowie der berechnete Kontrast sind in Tabelle \ref{tab:Kontrast} zusammengestellt.
 Das Maximum des Kontrasts liegt bei einem Winkel von 60\circ.\\
@@ -47,7 +47,7 @@ Um die Messwerte optimal durch einen Fit zu approximieren wurden die Messwerte z
 \subsection{Berechnung des Brechungsindex der Platten}
   In der Anleitung \cite{Anleitung} finden sich zur Berechnung des Brechungsindex der Platten folgende Herstellerangaben:\\
 \begin{center}
-  $T = \SI{1}{\milli\meter}$, $n_{\symup{Lit}}=1.35$, $\delta =10°$
+  $T = \SI{1}{\milli\meter}$, $n_{\symup{Lit}}=1.5$, $\delta =10°$
 \end{center}
 Anhand dieser Angaben, sowie den gemessenen Werten, wird mithilfe von Formel \eqref{eq:index} aus der Theorie der Brechungsindex der Platten errechnet.
 Die berechneten Werte sind in Tabelle \ref{tab:plattenindex} einzusehen.\\
@@ -58,22 +58,22 @@ Die berechneten Werte sind in Tabelle \ref{tab:plattenindex} einzusehen.\\
   \begin{tabular}{c|c|c|c}
     Messung& Counts M& Brechungsindex n& Fehler\\
     \hline
-    1& 55& 1.298& 0.162\\
-    2& 40& 1.244& 0.127\\
-    3& 55& 1.312& 0.152\\%Bullshit messung! in den messwerten ist auch n fetter sprung.
-    4& 51& 1.258& 0.140\\
-    5& 55& 1.334& 0.168\\
-    6& 43& 1.154& 0.096\\
-    7& 37& 1.203& 0.209\\
-    8& 34& 1.126& 0.072\\
+    1& 55& 1.998& 0.669\\
+    2& 40& 1.713& 0.419\\
+    3& 55& 2.044& 0.628\\%Bullshit messung! in den messwerten ist auch n fetter sprung.
+    4& 51& 1.790& 0.514\\
+    5& 55& 2.175& 0.691\\
+    6& 43& 1.394& 0.096\\
+    7& 37& 1.789& 0.269\\
+    8& 34& 1.611& 0.636\\
   \end{tabular}
 \end{table}
 
-Als Mittelwert dieser Ergebnisse ergibt sich $n =1.241 \pm 0.070$.
+Als Mittelwert dieser Ergebnisse ergibt sich $n =1.814 \pm 0.244$.
 
 \subsection{Berechnung des Brechungsindex von Luft}
 In den Tabellen \ref{tab:druckdaten1} und \ref{tab:druckdaten2} sind die mithilfe von Formel \eqref{eqn:n0} berechneten Werte des Brechungsindex von Luft bei steigendem Druck zu sehen.
-Die Wellenlänge des Lasers beträgt nach wie vor $\lambda_{vac}=\SI{632.99}{\nano\meter}$. Die Länge der Gaszelle ist durch $L=\SI{10}{\centi\meter}$ gegeben.
+Die Wellenlänge des Lasers beträgt nach wie vor $\lambda_{vac}=\SI{632.99}{\nano\meter}$\cite{Anleitung}. Die Länge der Gaszelle ist durch $L=\SI{10}{\centi\meter}$\cite{Anleitung} gegeben.
 \begin{table}[H]
   \center
   \caption{Brechungsindex von Luft bei steigendem Druck in 100 mbar Schritten.}
