@@ -1,48 +1,50 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{Berechnung der Aktivierungsarbeit aus der Anlaufkurve}
+Um die Aktivierungsarbeit der Dipole zu berechnen, werden die Messwerte für Temperatur und Strom
+mit der Exponentialfunktion der Form
+\begin{equation}
+  y(T) = a\cdot e^{mT}
+  \label{eqn:efit}
+\end{equation}
+gefittet.
+% Mittlere heizspannung efit 3.2 0.13
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{plots/efit.pdf}
+  \caption{Anlaufkurve des Depolarisationsstromes bei einer mittleren Heizrate von $H_1 =\SI{3.3 \pm 0.08}{\kelvin\per\minute}$.}
+  \label{fig:efit1}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\textwidth]{plots/efit2.pdf}
+  \caption{Anlaufkurve des Depolarisationsstromes bei einer mittleren Heizrate von $H_2 =\SI{1.26 \pm 0.07 }{\kelvin\per\minute}$}
+  \label{fig:efit2}
+\end{figure}
+Die gefitteten Anlaufkurven sind in Abbildung \ref{fig:efit1} und \ref{fig:efit2} zu sehen.
+Für den Fit der zweiten Messung wurden die in Abbildung \ref{fig:efit2} gezeigten bauen Messwerte nicht berücksichtigt.
+Aus den angehängten Messwerten wurden ausserdem mittlere Heizraten für beide Messungen bestimmt. Die aus den Werten der Anlaufkurve ermittelten Heizraten lauten:
+\begin{center}
+  $H_1 =(3.2 \pm 0.13)\frac{\symup{K}}{\text{min}}$, $H_2 = (1.26 \pm 0.064)\frac{\symup{K}}{\text{min}}$
+\end{center}
+Aus der Ausgleichsrechnung ergeben sich die Fitparameter zu
+\begin{center}
+    $m_1 = 5680.23$, $ a_1= 24.98$, $m_2 = 5425.56$, $a_2 = 23.87$.
+\end{center}
+Aus dem Fitparameter $m_{(1/2)}$ werden dann nach
+\begin{equation}
+  W_{1/2} = m_{1/2}\cdot k_B
+\end{equation}
+die Austrittsarbeiten berechnet. Die berechneten Arbeiten lauten:
+\begin{center}
+  $W_1 = \SI{0.78e-19}{\joule}$ und $W_2 = \SI{0.75e-19}{\joule}$
+\end{center}
 
-% \begin{figure}
-%   \centering
-%   \includegraphics{plot.pdf}
-%   \caption{Plot.}
-%   \label{fig:plot}
-% \end{figure}
-
-
-
-% \begin{table}
-%    % Notation :  {% nicht entfernen ist sehr wichtig sonst Fehler !!
-% \parbox{0.48\textwidth}{% %Ermöglicht zwei Tabellen neben einander
-%   \centering
-%   \sisetup{round-mode = places , round-precision = 0,scientific-notation=fixed, fixed-exponent = 0}
-%          %rundet Werte aus Stelle, Stelle = ,  macht einen bestimmten festen exponenten
-%   \resizebox{\textwidth}{!}{%  % skaliert zu große Tabellen
-%   \begin{tabular}{S@{${}\pm{}$} S} % fügt plus minus Fehler Schreibweise hinzu
-%     \toprule
-%      $\text{e}_b / \si{\milli\meter}$ &
-%      $\text{d}_b /\si{\milli\meter} $ & $\text{f}_b / \si{\milli\meter} $\\
-%     \midrule
-%     \bottomrule
-%   \end{tabular}
-%   % }
-%   \caption{Tabellenunterschrift}
-%   \label{tab:tab}
-% }
-% % \end{table}
-% % \begin{table}
-% \parbox{0.48\textwidth}{%
-%   \centering
-%   \sisetup{round-mode = places , round-precision = 0,scientific-notation=fixed, fixed-exponent = 0}
-%   % \resizebox{\textwidth}{!}{%
-%   \begin{tabular}{S@{${}\pm{}$} S}
-%     \toprule
-%      $\text{e}_b / \si{\milli\meter}$ &
-%      $\text{d}_b /\si{\milli\meter} $ & $\text{f}_b / \si{\milli\meter} $\\
-%     \midrule
-%     \bottomrule
-%   \end{tabular}
-%   % }
-%   \caption{Tabellenunterschrift}
-%   \label{tab:tab}
-% }
-% \end{table}
+% kurve2 2.25 0.09
+% kurve3 1.37 0.09
+% efit2
+% a = 2983.94
+% W = -0.416*10**(-19)
+% efit1
+% a = 5680.23
+% W = 0.784*10**(-19)
