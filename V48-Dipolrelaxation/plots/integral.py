@@ -79,20 +79,20 @@ print('b1= ', b1)
 print('b2 = ', b2)
 tau1 = int1/(b1*I1[0:12]) #Kelvin*picoAmpere*kelvin^-1*sekunde*picoampere^-1=sekunde
 tau2 = int2/(b2*I2[18:49])
+copy1 = tau1
+copy2 = tau2
+plt.plot(T1[0:12],tau1, 'r.', label='Erste Messreihe')
+plt.plot( T2[18:49], tau2, 'g.', label='Zweite Messreihe')
 
-i1 = I1[0:12]
-i2 = I2[18:49]
-while len(tau1):
-    tau1 = np.append(tau1, 0)
-    i1 = np.append(i1, 0)
-
-np.savetxt('tautab.txt',np.column_stack([tau1,T1[0:12],tau2,T2[18:49]]), delimiter=' & ',newline= r'\\'+'\n' )
+t1 = T1[0:12]
+t2 = T2[18:49]
+while len(copy1)<len(copy2):
+    copy1 = np.append(copy1, 0)
+    t1 = np.append(t1, 0)
+print(len(copy1), len(copy2), len(t1), len(t2))
+np.savetxt('tautab.txt',np.column_stack([copy1,t1,copy2,t2]), delimiter=' & ',newline= r'\\'+'\n' )
 
 print('taumax1= ', tau1[7])
-
-
-plt.plot(T1[1:13],tau1, 'r.', label='Erste Messreihe')
-plt.plot( T2[18:49], tau2, 'g.', label='Zweite Messreihe')
 
 plt.xlabel('T/K')
 plt.ylabel(r'$\tau$/s')
@@ -103,7 +103,7 @@ plt.clf()
 
 Tau1 = np.log(tau1*b1)
 Tau2 = np.log(tau2*b2)
-t1 = 1/T1[1:13]
+t1 = 1/T1[0:12]
 t2 = 1/T2[18:49]
 
 def f(x,m,b):
