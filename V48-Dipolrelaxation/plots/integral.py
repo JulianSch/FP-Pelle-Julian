@@ -101,8 +101,8 @@ plt.legend(loc='best')
 plt.savefig('integral.pdf')
 plt.clf()
 
-Tau1 = np.log(tau1*b1)
-Tau2 = np.log(tau2*b2)
+Tau1 = np.log(int1/I1[0:12])
+Tau2 = np.log(int2/I2[18:49])
 t1 = 1/T1[0:12]
 t2 = 1/T2[18:49]
 
@@ -126,7 +126,7 @@ print('W2=', w2)
 plt.plot(t2, Tau2, 'g.', label ='Zweite Messreihe')
 plt.plot(t2, f(t2,*params2), 'g--', label ='Zweiter Fit')
 plt.xlabel('1/(T/K)')
-plt.ylabel(r'$\ln(\tau\cdot H)$')
+plt.ylabel(r'$\ln(\tau \H}$')
 plt.grid()
 plt.legend(loc='best')
 plt.savefig('log.pdf')
