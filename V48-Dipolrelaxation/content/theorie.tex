@@ -23,7 +23,7 @@ in eine statistische Verteilung über gehen. $\tau_0$ bezeichnet hierbei die sog
 Dipolen in Richtung des Feldes auslenken.
 Da $\tau$ gemäß \eqref{eqn:relaxation} temperaturabhängig ist, lassen sich Dipole durch zügiges abkühlen "einfrieren". Heizt man anschließend den zu untersuchenden Kristall mit konstanter Heizrate
 \begin{equation}
-  b := \frac{\symup{d}T}{\symup{d}t} = \text{const}
+  H := \frac{\symup{d}T}{\symup{d}t} = \text{const}
   \label{eqn:heizrate}
 \end{equation}
 auf, so fließt durch die Relaxation der Dipole eine Relaxationsstromdichte $j$ von
@@ -39,13 +39,13 @@ Da die Relaxationsrate der Dipole mit Relaxationszeit $\tau(T)$ wie bei radioakt
 \end{equation}
 einen Ausdruck für $N(t)$, welcher sich mittels \eqref{eqn:heizrate} zu
 \begin{equation}
-  N(T) = N_p \exp{-\frac{1}{b}\int^T_{T_0} \frac{\symup{d}T'}{\tau(T')}}
+  N(T) = N_p \exp{-\frac{1}{H}\int^T_{T_0} \frac{\symup{d}T'}{\tau(T')}}
   \label{eqn:N}
 \end{equation}
 umschreiben lässt.
 Als endgültiger Ausdruck für $j(T)$ findet sich dann
 \begin{equation}
-  j(T) = \frac{p^2E}{3kT_p}\frac{N_p}{\tau_0}\exp{\left(-\frac{1}{b}\int^T_{T_0}\exp{\left(-\frac{W}{kT'}\right)}\symup{d}T'\right)}\exp{\left(-\frac{W}{kT}\right)}.
+  j(T) = \frac{p^2E}{3kT_p}\frac{N_p}{\tau_0}\exp{\left(-\frac{1}{H}\int^T_{T_0}\exp{\left(-\frac{W}{kT'}\right)}\symup{d}T'\right)}\exp{\left(-\frac{W}{kT}\right)}.
   \label{eqn:jKomplett}
 \end{equation}
 
@@ -73,7 +73,7 @@ berechnen.
 Aus einem gemessenen Verlauf $i(T)$ lässt sich somit $W$ durch die Steigung einer linearen Ausgleichsgeraden an die logarithmierten Verläufe von \eqref{eqn:tau2}, bzw. \eqref{eqn:dichtefertig}, bestimmen.
 Zur Bestimmung von $\tau_0$ betrachtet man die Lage des Maximums von $i(T)$. Dieses liegt nach \eqref{eqn:jKomplett} bei
 \begin{equation}
-  \tau_{max}(T) = \frac{bkT_{max}^2}{W}.
+  \tau_{max}(T) = \frac{HkT_{max}^2}{W}.
   \label{eqn:tau3}
 \end{equation}
 Mit Hilfe dieses Wertes und \eqref{eqn:relaxation} lässt sich nun $\tau_0$ berechnen.
