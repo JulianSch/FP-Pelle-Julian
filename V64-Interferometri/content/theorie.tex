@@ -32,12 +32,16 @@ Ist dieser Kontrast hinreichend groß, kann eine zuverlässige Bestimmung der Dr
 	M = \frac{\Delta n}{\lambda_{vac}} L
 \end{equation}
 bei der $\lambda_{vac}$ die Wellenlänge des Lasers bezeichnet.
-Der Brechungsindex $n_0$ bei $T_0 = \SI{273,15}{\kelvin}$ und $p_0 =  \SI{1013,2}{\milli\bar}$ ergibt sich nach \cite{AltAnleitung} über
+Für den Brechungsindex ergibt sich daraus dann die Formel:
 \begin{equation}
-	n(p_0,T_0)=1+ \Delta n \frac{T}{T_0} \frac{p_0}{p_2-p_1}.
-	\label{eqn:n0}
+  n = \frac{M\lambda_{vac}}{L} + 1
+  \label{eqn:n0}
 \end{equation}
-
+% Der Brechungsindex $n_0$ bei $T_0 = \SI{273,15}{\kelvin}$ und $p_0 =  \SI{1013,2}{\milli\bar}$ ergibt sich nach \cite{AltAnleitung} über
+% \begin{equation}
+% 	n(p_0,T_0)=1+ \Delta n \frac{T}{T_0} \frac{p_0}{p_2-p_1}.
+% 	\label{eqn:n0}
+% \end{equation}
 Zur Messung des Brechungsindex eines Plättchens wird eine Halterung mit zwei um $\Phi = 20\circ$ gegeneinander geneigte Plättchen verwendet. Jeder der beiden Strahlen durchläuft eines der beiden Plättchen und erhält damit, einmal durch den durch Brechung verlängerten Weg, einmal durch den geänderten Brechungsindex eine Phasenverschiebung. Werden die Plättchen in der optischen Ebene um $\theta$ gedreht, detektiert man wieder Interfenzmaxima $M$.
 Für eine der Platten gilt nach \cite{Anleitung} näherungsweise für kleine Winkel
 \begin{equation}
@@ -53,7 +57,7 @@ Eine Taylorentwicklung von \eqref{eq:fringes} um einen Winkel $\pm \delta$ und a
 
 Durch Umstellen erhält man
 \begin{equation}
-  n = \left(1-\frac{\lambda_{vac}M}{2T\delta \theta}\right)^-1
+  n = \left(1-\frac{\lambda_{vac}M}{2T\delta \theta}\right)^{-1}
   \label{eq:index}
 \end{equation}
 % von Julian benutzte formel zur auswertung : n = \frac{T\theta^2}{T\theta^2 - M\lambda_{vac}}
