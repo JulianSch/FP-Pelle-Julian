@@ -1,2 +1,40 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+Um die Horizontalkomponente des Erdmagnetfeldes zu bestimmen, werden die zur erzeugung der Felder gemessenen Ströme zunächst mithilfe der Formel
+\begin{equation}
+  B = \mu_0 I \frac{N}{l}
+  \label{eqn:Spulenbfeld}
+\end{equation}
+in magnetische Feldstärken umgerechnet.
+Die dafür benötigten Daten werden der Anleitung\cite{Anleitung} entnommen und lauten:
+\begin{table}[H]
+  \centering
+  \caption{Herstellerangaben für Windungszahl $N$ und Radius $r$ der drei Verwendeten Spulenpaare}
+  \label{tab:Spulendaten}
+  \begin{tabular}{ccc}
+    Spule & $N$ &$r$ in cm\\
+    \hline
+    Horizontalfeld& 151 & 15.79\\
+    Vertikalfeld  & 20  & 11.735\\
+    RF-Feld       & 11  & 16.39\\
+  \end{tabular}
+\end{table}
+Zur Bestimmung der Horizontalkomponente werden nun die Werte für B-Feld und Frequenz aus Tabelle \ref{tab:messung} je linear gefittet.
+\begin{table}
+  \caption{Werte beider Messungen für horizontales Magnetfeld in Abhängigkeit von der Frequenz}
+  \label{tab:messung}
+  \begin{tabular}{|c|c|c|c|}
+    $f_1$ in kHz & $B_{H1}$ in $\mu$T &$f_2$ in kHz & $B_{H2}$ in $\mu$T\\
+    \hline
+     98& & 109& \\
+     194& & 210&\\
+     296& & 303&\\
+     393& & 400&\\
+     499& & 507&\\
+     608& & 613&\\
+     706& & 707&\\
+     802& & 805&\\
+     916& & 901&\\
+     1016& & 1027&\\
+  \end{tabular}
+\end{table}
