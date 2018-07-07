@@ -2,7 +2,7 @@ import numpy as np
 import scipy.constants as const
 from scipy.optimize import curve_fit
 from uncertainties import ufloat
-import uncertainties.unumpy as unp
+# import uncertainties.unumpy as unp
 import matplotlib.pyplot as plt
 f, s1, s2, h1, h2 = np.genfromtxt('messung1.txt', unpack=True)
 F, S1, S2, H1, H2 = np.genfromtxt('messung2.txt', unpack=True)
@@ -128,6 +128,39 @@ plt.legend(loc="best")
 plt.savefig("Bfeldfit2.pdf")
 plt.clf()
 # Berechnung der Landé-Faktoren
+m1 = ufloat(params1[0], errors1[0])
+m2 = ufloat(params2[0], errors2[0])
+m3 = ufloat(params3[0], errors3[0])
+m4 = ufloat(params4[0], errors4[0])
+# print(m1)
+# m in Feld pro Frequenz
+g1 = const.h/(m1*const.value('Bohr magneton'))
+g2 = const.h/(m2*const.value('Bohr magneton'))
+g3 = const.h/(m3*const.value('Bohr magneton'))
+g4 = const.h/(m4*const.value('Bohr magneton'))
 
-# magnetisches Moment zu F
+print('')
+print('Landé Faktoren:')
+print('')
+print('erste Messung:')
+print('g1 =', g1)
+print('g2 =', g2)
+print('')
+print('zweite Messung:')
+print('g3 =', g3)
+print('g4 =', g4)
+print('')
 # Berechnung der Kernspins
+print('Kernspins:')
+print('')
+print('erste Messung:')
+I1 = ((2.0023 / g1) - 1)/2
+print('I1 =', I1)
+I2 = ((2.0023 / g2) - 1)/2
+print('I2 =', I2)
+print('')
+print('zweite Messung:')
+I3 = ((2.0023 / g3) - 1)/2
+print('I3 =', I3)
+I4 = ((2.0023 / g4) - 1)/2
+print('I4 =', I4)
