@@ -1,4 +1,5 @@
 import numpy as np
+from uncertainties import ufloat
 
 
 def n(x, T, l, M, d):
@@ -59,3 +60,7 @@ data = [np.mean(n1), np.mean(n2), np.mean(n3), np.mean(n4), np.mean(n5), np.mean
 print('Mittelwert = ')
 print(np.mean(data))
 print(np.std(data))
+
+x = ufloat(1.814, 0.244)
+delta = x - 1.5
+print(delta)
