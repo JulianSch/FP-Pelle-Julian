@@ -11,10 +11,10 @@ F, S1, S2, H1, H2 = np.genfromtxt('messung2.txt', unpack=True)
 v = (24.1 + 8)*0.1  # Vertikalfeldspule + Umrechnung in Ampere
 
 # Umrechnung in Ampere
-h1 = (h1 + 8)*10**(-2)
-h2 = (h2 + 8)*10**(-2)
-H1 = (H1 + 8)*10**(-2)
-H2 = (H2 + 8)*10**(-2)
+h1 = (h1 + 8)*10**(-2)*0.3
+h2 = (h2 + 8)*10**(-2)*0.3
+H1 = (H1 + 8)*10**(-2)*0.3
+H2 = (H2 + 8)*10**(-2)*0.3
 s1 = (s1 + 8)*10**(-1)
 s2 = (s2 + 8)*10**(-1)
 S1 = (S1 + 8)*10**(-1)
@@ -42,9 +42,11 @@ Ns = 11
 print('')
 print('Erste Messung:')
 print('')
-Bh1 = const.mu_0*h1*Nh/lh
+# Bh1 = const.mu_0*h1*Nh/lh
+Bh1 = const.mu_0*(8*h1*Nh)/((np.sqrt(125))*rh)
 print('Horizontalfeld Isotop 1 =', Bh1)
-Bh2 = const.mu_0*h2*Nh/lh
+# Bh2 = const.mu_0*h2*Nh/lh
+Bh2 = const.mu_0*(8*h2*Nh)/((np.sqrt(125))*rh)
 print('')
 print('Horizontalfeld Isotop 2 =', Bh2)
 
@@ -57,9 +59,11 @@ print('Sweepfeld Isotop 2 =', Bs2)
 print('')
 print('Zweite Messung:')
 print('')
-BH1 = const.mu_0*H1*Nh/lh
+# BH1 = const.mu_0*H1*Nh/lh
+BH1 = const.mu_0*(8*H1*Nh)/((np.sqrt(125))*rh)
 print('Horizontalfeld Isotop 1 =', BH1)
-BH2 = const.mu_0*H2*Nh/lh
+# BH2 = const.mu_0*H2*Nh/lh
+BH2 = const.mu_0*(8*H2*Nh)/((np.sqrt(125))*rh)
 print('')
 print('Horizontalfeld Isotop 2 =', BH2)
 BS1 = const.mu_0 * S1*Ns/ls
