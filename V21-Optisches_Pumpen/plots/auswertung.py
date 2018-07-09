@@ -8,7 +8,7 @@ f, s1, s2, h1, h2 = np.genfromtxt('messung1.txt', unpack=True)
 F, S1, S2, H1, H2 = np.genfromtxt('messung2.txt', unpack=True)
 # f = Frequenz in kHz s = Sweepspule, h = Horizontalfeldspule
 # 1 Umdrehung entspricht 0.1 V und 0.1 Ampere
-v = (24.1 + 8)*0.1*0.1  # Vertikalfeldspule + Umrechnung in Ampere
+v = (24.1 + 8)*0.1  # Vertikalfeldspule + Umrechnung in Ampere
 
 # Umrechnung in Ampere
 h1 = (h1 + 8)*10**(-2)
@@ -134,10 +134,10 @@ m3 = ufloat(params3[0], errors3[0])
 m4 = ufloat(params4[0], errors4[0])
 # print(m1)
 # m in Feld pro Frequenz
-g1 = const.h/(m1*const.value('Bohr magneton'))
-g2 = const.h/(m2*const.value('Bohr magneton'))
-g3 = const.h/(m3*const.value('Bohr magneton'))
-g4 = const.h/(m4*const.value('Bohr magneton'))
+g1 = const.h/(m1*const.value('Bohr magneton'))*1000
+g2 = const.h/(m2*const.value('Bohr magneton'))*1000
+g3 = const.h/(m3*const.value('Bohr magneton'))*1000
+g4 = const.h/(m4*const.value('Bohr magneton'))*1000
 
 print('')
 print('Landé Faktoren:')

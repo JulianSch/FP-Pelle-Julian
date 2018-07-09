@@ -1,5 +1,7 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{Bestimmung der Horizontalfeldkomponente des Erdmagnetfelds}
+\label{subsec:erdbfeld}
 Um die Horizontalkomponente des Erdmagnetfeldes zu bestimmen, werden die zur erzeugung der Felder gemessenen Ströme zunächst mithilfe der Formel
 \begin{equation}
   B = \mu_0 I \frac{N}{l}
@@ -11,7 +13,7 @@ Die dafür benötigten Daten werden der Anleitung\cite{Anleitung} entnommen und 
   \centering
   \caption{Herstellerangaben für Windungszahl $N$ und Radius $r$ der drei Verwendeten Spulenpaare}
   \label{tab:Spulendaten}
-  \begin{tabular}{ccc}
+  \begin{tabular}{c|c|c}
     Spule & $N$ &$r$ in cm\\
     \hline
     Horizontalfeld& 151 & 15.79\\
@@ -21,6 +23,7 @@ Die dafür benötigten Daten werden der Anleitung\cite{Anleitung} entnommen und 
 \end{table}
 Zur Bestimmung der Horizontalkomponente werden nun die Werte für B-Feld und Frequenz aus Tabelle \ref{tab:messung} je linear gefittet.
 \begin{table}
+  \centering
   \caption{Werte beider Messungen für horizontales Magnetfeld in Abhängigkeit von der Frequenz}
   \label{tab:messung}
   \begin{tabular}{|c|c|c|c|}
@@ -38,3 +41,24 @@ Zur Bestimmung der Horizontalkomponente werden nun die Werte für B-Feld und Fre
      1016& & 1027&\\
   \end{tabular}
 \end{table}
+\subsection{Berechnung der Landé-Faktoren und der Kernspins}
+\label{subsec:lande}
+Um die Landé-Faktoren auszurechnen, wird Formel \eqref{??} aus der Theorie verwendet. In diese Formel wird nun für die Energiedifferenz die Energie der Lichtquanten eingesetzt, die mithilfe der RF-Spule erzeugt werden. Mit der Energie der Photonen $U = h\cdot f$, wobei f die Frequenz und h die Planckkonstante sind, lässt sich die Formel \eqref{??} jetzt zu
+\begin{equation}
+  g_F = \frac{h\cdot f}{\mu_B\cdot B}
+  \label{eqn:landefaktor}
+\end{equation}
+umstellen. In diese Gleichung wird nun Steigung $m = \frac{B}{f}$ des Fits aus \ref{subsec:erdbfeld} eingesetzt wodurch sich die Landé-Faktoren zu
+\begin{center}
+  $g_{F1} = $ $g_{F2} = $ $g_{F3} = $ $g_{F4} = $
+\end{center}
+ergeben.\\
+Für die Berechnung der Kernspins der beiden Rubidium Isotope wird die Formel \eqref{???} nach $I$ umgestellt. Der Elektronenhüllenspin $J = \frac{1}{2}$ eines Alkaliatoms lässt sich aus der Summe der Spinquantenzahl $S = \frac{1}{2}$ und der Drehimpulsquantenzahl $L = 0$ berechnen, woraus $g_J = 2.0023$ folgt. Die Formel \eqref{???} verändert sich dann zu
+\begin{equation}
+  I = \frac{\frac{g_J}{g_F}-1}{2}
+  \label{eqn:kernspin}
+\end{equation}.
+Die Kernspins, die sich aus den beiden Messungen ergeben lauten dann:
+\begin{center}
+  $I_1 =$$I_1 =$$I_1 =$$I_1 =$
+\end{center}
