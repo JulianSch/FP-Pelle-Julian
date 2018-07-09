@@ -21,44 +21,65 @@ Die dafür benötigten Daten werden der Anleitung\cite{Anleitung} entnommen und 
     RF-Feld       & 11  & 16.39\\
   \end{tabular}
 \end{table}
+Aus den Angaben für die Vertikalfeldspule ergibt sich ein magnetisches Feld $B_v = \SI{49.19}{\micro\tesla}$
 Zur Bestimmung der Horizontalkomponente werden nun die Werte für B-Feld und Frequenz aus Tabelle \ref{tab:messung} je linear gefittet.
 \begin{table}
   \centering
-  \caption{Werte beider Messungen für horizontales Magnetfeld in Abhängigkeit von der Frequenz}
+  \caption{Werte beider Messungen für horizontales Magnetfeld in Abhängigkeit von der Frequenz für beide Isotope}
   \label{tab:messung}
-  \begin{tabular}{|c|c|c|c|}
-    $f_1$ in kHz & $B_{H1}$ in $\mu$T &$f_2$ in kHz & $B_{H2}$ in $\mu$T\\
+  \begin{tabular}{|c|c|c||c|c|c|}
+    $f_1$ in kHz & $B_{H11}$ in $\mu$T &$B_{H12}$ in $\mu$T&$f_2$ in kHz & $B_{H21}$ in $\mu$T&$B_{H22}$ in $\mu$T\\
     \hline
-     98& & 109& \\
-     194& & 210&\\
-     296& & 303&\\
-     393& & 400&\\
-     499& & 507&\\
-     608& & 613&\\
-     706& & 707&\\
-     802& & 805&\\
-     916& & 901&\\
-     1016& & 1027&\\
+     98& 21.04 & 21.04& 109& 21.04& 21.04 \\
+     194& 21.04& 21.04& 210& 15.78& 15.78\\
+     296& 42.09& 42.09& 303& 31.57& 31.57\\
+     393& 57.88& 57.88& 400& 52.61& 52.62\\
+     499& 78.93& 78.93& 507& 78.93& 78.93\\
+     608& 99.97& 99.97& 613& 99.97& 99.97\\
+     706& 121.02& 121.02& 707& 99.97& 115.76\\
+     802& 99.97& 142.06& 805& 126.28& 163.11\\
+     916& 110.50& 194.69& 901& 121.02& 168.38\\
+     1016& 121.02& 215.73& 1027& 110.50& 215.73\\
   \end{tabular}
 \end{table}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{plots/Bfeldfit1}
+  \caption{Lineare Fit der Messwerte der ersten Messung für Frequenz und horizontales Magnetfeld beider Isotope zur Bestimmung der horizontalkomponente des Erdmagnetfeldes.}
+  \label{fig:Bfeldfit1}
+\end{figure}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{plots/Bfeldfit2}
+  \caption{Lineare Fit der Messwerte der zweiten Messung für Frequenz und horizontales Magnetfeld beider Isotope zur Bestimmung der horizontalkomponente des Erdmagnetfeldes.}
+  \label{fig:Bfeldfit2}
+\end{figure}
+In den Abbildungen \ref{fig:Bfeldfit1} und \ref{fig:Bfeldfit2} sind die Fits beider Messungen zu sehen. Die errechneten Fitparameter lauten:
+\begin{center}
+  $m_{11} =\SI{0.1199 \pm 0.015}{\micro\tesla\per\kilo\hertz}$ \,\,$b_{11} =\SI{11.06 \pm 9.10}{\micro\tesla}$\\
+  $m_{12}=\SI{0.2112 \pm 0.0145}{\micro\tesla\per\kilo\hertz}$ \,\,$b_{11} =\SI{-21.12 \pm 9.08}{\micro\tesla}$\\
+  $m_{21} =\SI{0.1300 \pm 0.0144}{\micro\tesla\per\kilo\hertz}$ \,\,$b_{21} =\SI{3.88 \pm 9.03}{\micro\tesla}$\\
+  $m_{22}=\SI{2.1847 \pm 0.015}{\micro\tesla\per\kilo\hertz}$ \,\,$b_{22} =\SI{-24.48 \pm 9.44}{\micro\tesla}$\\
+\end{center}
+Die y-Achsenabschnitte $b_{ij}$ der Ausgleichsrechnungen stehen hierbei für die Horizontalkomponente des Erdmagnetfelds.
 \subsection{Berechnung der Landé-Faktoren und der Kernspins}
 \label{subsec:lande}
-Um die Landé-Faktoren auszurechnen, wird Formel \eqref{??} aus der Theorie verwendet. In diese Formel wird nun für die Energiedifferenz die Energie der Lichtquanten eingesetzt, die mithilfe der RF-Spule erzeugt werden. Mit der Energie der Photonen $U = h\cdot f$, wobei f die Frequenz und h die Planckkonstante sind, lässt sich die Formel \eqref{??} jetzt zu
+Um die Landé-Faktoren auszurechnen, wird Formel \eqref{eqn:U} aus der Theorie verwendet. In diese Formel wird nun für die Energiedifferenz die Energie der Lichtquanten eingesetzt, die mithilfe der RF-Spule erzeugt werden. Mit der Energie der Photonen $U = h\cdot f$, wobei f die Frequenz und h die Planckkonstante sind, lässt sich die Formel \eqref{eqn:U} jetzt zu
 \begin{equation}
   g_F = \frac{h\cdot f}{\mu_B\cdot B}
   \label{eqn:landefaktor}
 \end{equation}
 umstellen. In diese Gleichung wird nun Steigung $m = \frac{B}{f}$ des Fits aus \ref{subsec:erdbfeld} eingesetzt wodurch sich die Landé-Faktoren zu
 \begin{center}
-  $g_{F1} = $ $g_{F2} = $ $g_{F3} = $ $g_{F4} = $
+  $g_{F1} = 0.6 \pm 0.07$\\ $g_{F2} = 0.328 \pm 0.022$\\ $g_{F3} = 0.55 \pm 0.06$\\ $g_{F4} =0.327 \pm 0.023$\\
 \end{center}
 ergeben.\\
-Für die Berechnung der Kernspins der beiden Rubidium Isotope wird die Formel \eqref{???} nach $I$ umgestellt. Der Elektronenhüllenspin $J = \frac{1}{2}$ eines Alkaliatoms lässt sich aus der Summe der Spinquantenzahl $S = \frac{1}{2}$ und der Drehimpulsquantenzahl $L = 0$ berechnen, woraus $g_J = 2.0023$ folgt. Die Formel \eqref{???} verändert sich dann zu
+Für die Berechnung der Kernspins der beiden Rubidium Isotope wird die Formel \eqref{???} nach I umgestellt. Der Elektronenhüllenspin $\text{J} = \frac{1}{2}$ eines Alkaliatoms lässt sich aus der Summe der Spinquantenzahl $\text{S} = \frac{1}{2}$c und der Drehimpulsquantenzahl $\text{L} = 0$ berechnen, woraus $g_J = 2.0023$ folgt. Die Formel \eqref{???} verändert sich dann zu
 \begin{equation}
-  I = \frac{\frac{g_J}{g_F}-1}{2}
+  \text{I} = \frac{\frac{g_J}{g_F}-1}{2}
   \label{eqn:kernspin}
 \end{equation}.
 Die Kernspins, die sich aus den beiden Messungen ergeben lauten dann:
 \begin{center}
-  $I_1 =$$I_1 =$$I_1 =$$I_1 =$
+  $\symup{I_1} = 1.18 \pm 0.20$\\ $\symup{I_2} = 2.56 \pm 0.20$\\ $\symup{I_3} = 1.32 \pm 0.20$\\ $\symup{I_4} = 2.56 \pm 0.21$\\
 \end{center}
