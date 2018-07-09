@@ -11,14 +11,14 @@ F, S1, S2, H1, H2 = np.genfromtxt('messung2.txt', unpack=True)
 v = (24.1 + 8)*0.1*0.1  # Vertikalfeldspule + Umrechnung in Ampere
 
 # Umrechnung in Ampere
-h1 = (h1 + 8)*10**(-1)
-h2 = (h2 + 8)*10**(-1)
-H1 = (H1 + 8)*10**(-1)
-H2 = (H2 + 8)*10**(-1)
-s1 = (s1 + 8)*10**(-2)
-s2 = (s2 + 8)*10**(-2)
-S1 = (S1 + 8)*10**(-2)
-S2 = (S2 + 8)*10**(-2)
+h1 = (h1 + 8)*10**(-2)
+h2 = (h2 + 8)*10**(-2)
+H1 = (H1 + 8)*10**(-2)
+H2 = (H2 + 8)*10**(-2)
+s1 = (s1 + 8)*10**(-1)
+s2 = (s2 + 8)*10**(-1)
+S1 = (S1 + 8)*10**(-1)
+S2 = (S2 + 8)*10**(-1)
 print(h1)
 # Vertikalfeldspulenkonstanten
 rv = 11.735*10**(-2)  # Radius
@@ -31,7 +31,7 @@ print('Vertikalfeld =', Bv)
 print('')
 
 # Konstanten der Spulen h = Horizontal s = Sweep
-rh = 15.79**(-2)  # Radius
+rh = 15.79*10**(-2)  # Radius
 lh = 2*np.pi * rh * 154  # Drahtlänge
 Nh = 154  # Windungszahl
 
