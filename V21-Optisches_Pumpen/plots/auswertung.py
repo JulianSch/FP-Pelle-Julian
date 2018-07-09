@@ -19,7 +19,7 @@ s1 = (s1 + 8)*10**(-1)
 s2 = (s2 + 8)*10**(-1)
 S1 = (S1 + 8)*10**(-1)
 S2 = (S2 + 8)*10**(-1)
-print(h1)
+# print(h1)
 # Vertikalfeldspulenkonstanten
 rv = 11.735*10**(-2)  # Radius
 lv = 2*np.pi * rv * 20  # Drahtlänge
