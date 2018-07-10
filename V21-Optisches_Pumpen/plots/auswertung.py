@@ -8,7 +8,7 @@ f, s1, s2, h1, h2 = np.genfromtxt('messung1.txt', unpack=True)
 F, S1, S2, H1, H2 = np.genfromtxt('messung2.txt', unpack=True)
 # f = Frequenz in kHz s = Sweepspule, h = Horizontalfeldspule
 # 1 Umdrehung entspricht 0.1 V und 0.1 Ampere
-v = (24.1 + 8)*0.1  # Vertikalfeldspule + Umrechnung in Ampere
+v = (24.1 + 8)*0.1*0.1  # Vertikalfeldspule + Umrechnung in Ampere
 
 # Umrechnung in Ampere
 h1 = (h1 + 8)*10**(-2)*0.3
@@ -19,13 +19,14 @@ s1 = (s1 + 8)*10**(-1)
 s2 = (s2 + 8)*10**(-1)
 S1 = (S1 + 8)*10**(-1)
 S2 = (S2 + 8)*10**(-1)
-print(h1)
+# print(h1)
 # Vertikalfeldspulenkonstanten
 rv = 11.735*10**(-2)  # Radius
 lv = 2*np.pi * rv * 20  # Drahtlänge
 Nv = 20  # Windungszahl
 
-Bv = const.mu_0*v*Nv/lv
+# Bv = const.mu_0*v*Nv/lv
+Bv = const.mu_0*(8*v*Nv)/((np.sqrt(125))*rv)
 print('')
 print('Vertikalfeld =', Bv)
 print('')
