@@ -1,0 +1,10 @@
+# Fdb version 3
+["pdflatex"] 1531227273 "main.tex" "build/main.pdf" "main" 1531227273
+  "build/header.tex" 0 -1 0 ""
+  "build/main.aux" 1531227273 9 a94a2480d3289e625eea47cd1b285758 ""
+  "c:/texlive/2016/texmf-var/web2c/luatex/lualatex.fmt" 1475522352 1245707 4c4e4b4e8c4e3251e0492e6b5ea76c48 ""
+  "header.tex" 0 -1 0 ""
+  "main.tex" 1531210635 416 707c35628228dd66bbe98e13d02c0641 ""
+  (generated)
+  "build/main.pdf"
+  "build/main.log"
