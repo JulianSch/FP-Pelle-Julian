@@ -1,0 +1,4 @@
+PWD C:/Users/Julian/Desktop/Uni/Praktikumskrempel/FP/FP-Pelle-Julian/V21-Optisches_Pumpen
+INPUT c:/texlive/2016/texmf-var/web2c/luatex/lualatex.fmt
+INPUT ./main.tex
+OUTPUT build/main.log
