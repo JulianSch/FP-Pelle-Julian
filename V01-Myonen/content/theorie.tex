@@ -8,35 +8,31 @@
 \label{sec:Theorie}
 \subsection{Myonen und das Standardmodell}
 \label{sub:standard}
-Das Standardmodell der Teilchenphysik unterscheided zwischen Teilchen mit ganzzahligem und halbzahligem Spin. Erstere werden als Bosonen bezeichnet
-und stellen unter anderem die Teilchen der elementaren Wechselwirkungen. Letztere stellen die Elementarteilchen, Quarks und Leptonen.\\
-Myonen sind fermionische Teilchen, die der schwachen und der elektromagnetischen Wechselwirkung unterliegen und daher zu den Leptonen gehören.
-Diese setzen sich aus 3 Generationen von je 2 Teilchen zusammen.
+Das Standardmodell der Teilchenphysik unterscheidet zwischen Teilchen mit ganzzahligem und halbzahligem Spin. Erstere werden als Bosonen bezeichnet und stellen unter anderem die Teilchen der elementaren Wechselwirkungen. Letztere stellen die Elementarteilchen, Quarks und Leptonen.\\
+Die Myonen sind fermionische Teilchen, die der schwachen und ,aufgrund der Ladung der elektromagnet,ischen Wechselwirkung unterliegen und daher zu den Leptonen gehören. Diese setzen sich aus 3 Generationen von je 2 Teilchen zusammen:
 \begin{itemize}
   \item[1.] Elektronen $\symup{e^-}$ und Elektron-neutrinos $\symup{\nu_e}$
   \item[2.] Myonen $\symup{\mu^-}$ und Myon-neutrinos $\symup{\nu_\mu}$
   \item[3.] Tauonen $\symup{\tau^-}$ und Tau-neutrinos $\symup{\nu_\tau}$
 \end{itemize}
-Die Leptonen der zweiten und dritten Generation haben im Vergleich zum Elektron eine endliche Lebensdauer und Zerfallen daher nach kurzer Zeit.
-Myonen entstehen in der höheren Atmosphäre aufgrund von Streuung von einfallenden Protonen mit Teilchen in der Atmospähre. Bei diesem Prozess entstehen
-neben einer Vielzahl anderer Teilchen geladene Pionen, welche dann gemäß
+Kehrt man Ladung und Parität der Teilchen um erhält man die zu den jeweiligen Teilchen gehörenden Antiteilchen $\symup{e^+}$,  $\symup{\mu^+}$,  $\symup{\tau^+}$, $\symup{\bar{\nu}_e}$, $\symup{\bar{\nu}_\mu}$ und $\symup{\bar{\nu}_\tau}$.
+Die Leptonen der zweiten und dritten Generation haben im Vergleich zum Elektron eine endliche Lebensdauer und Zerfallen daher nach kurzer Zeit. Ausserdem unterscheiden sich die Massen der Teilchen stark, wobei das Elektron das leichteste und das Tauon das schwerste der Leptonen ist.
+Die Myonen entstehen in der höheren Atmosphäre aufgrund von Streuung von einfallenden Protonen mit Teilchen in der Atmospähre. Die einfallenden Protonen stammen dabei zum Beispiel aus Supernovae oder aktiven Galaktischen Kernen anderer Galaxien. Bei der Streuung der Protonen entstehen neben einer Vielzahl anderer Teilchen geladene Pionen, welche gemäß
 \begin{equation*}
   \pi^+ \to \mu^+ + \nu_{\mu} \qquad \text{ und } \qquad \pi^- \to \mu^- + \bar{\nu}_{\mu}
 \end{equation*}
-In Myonen und deren Antiteilchen zerfallen, welche dann aufgrund ihrer hohen Geschwindigkeit auch am Erdboden noch detektierbar sind.\\
-Die entstandenen Myonen Zerfallen dann in einem statistischen Prozess wie folgt weiter zu Leptonen der ersten Generation.
+in Myonen und deren Antiteilchen zerfallen. Aufgrund ihrer hohen Geschwindigkeit unterliegen die Myonen dem relativistischen Prinzip der Zeitdilatation und sind deshalb auch am Erdboden noch detektierbar.\\
+Die entstandenen Myonen zerfallen in einem statistischen Prozess weiter zu Leptonen der ersten Generation.
 \begin{equation*}
   \mu^- \to e^- + \bar{\nu}_e + \nu_\mu \qquad \text{ und } \qquad \mu^+ \to e^+ + \nu_e + \bar{\nu}_\mu
 \end{equation*}
 \subsection{Lebensdauern von instabilen Teilchen}
-Die Lebensdauer eines instabilen Teilchens ist eine charakteristische Größe, welche sich aus dem statistisch Ablaufenden Zerfallsprozess
-des Teilchens ableiten lässt. Dabei ist zu beachten, dass der Zerfall von Teilchen unabhängig von anderen Teilchen stattfindet und die Zeit, nach
-der ein Teilchen zerfällt unabhängig von der bisherigen Lebenszeit des Teilchens ist.\\
+Die Lebensdauer eines instabilen Teilchens ist eine charakteristische Größe, welche sich aus dem statistisch ablaufenden Zerfallsprozess des Teilchens ableiten lässt. Dabei ist zu beachten, dass der Zerfall von Teilchen unabhängig von anderen Teilchen stattfindet und die Zeit, nach der ein Teilchen zerfällt unabhängig von der bisherigen Lebenszeit des Teilchens ist.\\
 Die Anzahl von Teilchen, die innerhalb eines Zeitraums d$t$ zerfallen ist dann durch
 \begin{equation*}
   \symup{d}N = -\lambda N \symup{d}t
 \end{equation*}
- gegeben. Durch Integration und die Annahme einer großen Teilchenzahl $N$ lässt sich daraus das eponentielle Zerfallsgesetz ableiten.
+ gegeben. Durch Integration lässt sich daraus das exponentielle Zerfallsgesetz ableiten.
  \begin{equation}
    \frac{N(t)}{N_0} = \exp{\left(-\lambda t\right)}
    \label{eq:zerfall}
@@ -48,30 +44,21 @@ Für ein Intervall $\left[t,t+\symup{d}t\right]$ kann daraus die Verteilung der 
 \end{equation*}
 Der Erwartungswert der Zeit $t$ liefert dabei die mittlere Lebensdauer des Teilchens und lautet
 \begin{equation}
-  \left<t\right> = \tau = \frac{1}{\lambda}
+  \left<t\right> =\int^\infty_0 \lambda t \exp{\left(-\lambda t\right)} \symup{d}t = \tau = \frac{1}{\lambda}
 \end{equation}\\
 \\
-Da in einem realen Experiment immer nur Stichproben von Individuallebensdauern Messen kann, treten in der Kalkulation der Verteilung einige
-statistische Probleme auf. Um dies Auszugleichen wird der Erwartungswert in der Auswertung über nicht lineare Ausgleichsrechnung bestimmt mithilfe
-der Methode der kleinsten Quadrate ermittelt werden. Die Abschätzung der Lebensdauer folgt dann durch eine Abschätzung der Messwerte der Verteilungsfunktion.
+Da in einem realen Experiment immer nur Stichproben von Individuallebensdauern messen kann, treten in der Kalkulation der Verteilung einige statistische Probleme auf. Um dies Auszugleichen wird der Erwartungswert in der Auswertung über nicht lineare Ausgleichsrechnung bestimmt mithilfe der Methode der kleinsten Quadrate ermittelt werden. Die Abschätzung der Lebensdauer folgt dann durch eine Abschätzung der Messwerte der Verteilungsfunktion.
 \subsection{Myonendetektion}
-Im vorliegenen Versuch werden die Myonen mithilfe eines Szintillationsdetetektors nachgewiesen. Bei Eintritt in den Detektor deponieren die Teilchen eine
-Energie von ca. $\SI{2}{\mega\electronvolt}$ in den Szintillatormolekülen. Diese werden dabei Angeregt und emittieren bei anschließender Rückkehr in den Ausgangszustand
-Photonen im Bereich des sichtbaren und des nahen UV Spektrums. Wenn die Myonen während des Aufenthalts im Detektor vollständig abgebremst werden, zerfallen sie
-gemäß dem in Abschnitt \ref{sub:standard} benannten Prozess. Dabei werden Elektronen frei, deren Energie sehr hoch ist, da die Masse eines Myons um den Faktor 207
-größer ist als die des Elektrons. Diese Elektronen regen wiederum Szintillatormoleküle an welche dann einen Lichtblitz emittieren.
-Negativ geladene Myonen können nach der Abbremsung allerdings auch durch Szintillatoratome eingefangen werden und ein hochangeregtes myonisches Atom bilden.
-Das eingefangene Myon zerfällt allerdings auch nach einer modifizierten Lebensdauer, weshalb der Zerfall detektierbar bleibt.
+In dem vorliegenen Versuch werden die Myonen mithilfe eines Szintillationsdetetektors nachgewiesen. Das Szintillatiormaterial ist hierbei organisch, da für die Messung eine genaue Zeitauflösung wichtiger als gute Energieaufösung ist. Beim Eintritt in den Detektor deponieren die Teilchen eine Energie von ca. $\SI{2}{\mega\electronvolt\per\centi\meter}$ in den Szintillatormolekülen. Diese werden dabei angeregt und emittieren bei anschließender Rückkehr in den Ausgangszustand Photonen im Bereich des sichtbaren und des nahen UV Spektrums. Wenn die Myonen während des Aufenthalts im Detektor vollständig abgebremst werden, zerfallen sie gemäß dem in Abschnitt \ref{sub:standard} benannten Prozess. Dabei werden Elektronen frei, deren Energie sehr hoch ist, da die Masse eines Myons um den Faktor 207 größer ist als die des Elektrons. Diese Elektronen regen wiederum Szintillatormoleküle an welche dann einen Lichtblitz emittieren. Negativ geladene Myonen können nach der Abbremsung allerdings durch Szintillatoratome eingefangen werden und ein hochangeregtes myonisches Atom bilden. Das eingefangene Myon zerfällt allerdings nach einer modifizierten Lebensdauer, weshalb der Zerfall detektierbar bleibt. Die Lebensdauer von einem im Szintillatoratom gebundenen Myon ist dabei kleiner als die eines freien Myons.
 \subsection{Theoretische Vorbereitung zur Auswertung}
 \label{Vka}
-Um die im Vielkanalanalysator (siehe Abb. \ref{fig:schaltung}) ankommenden Signale sinnvoll auszuwerten werden die bei der Kalibrierung aufgenommenen Messwerte aus benachbarten Kanälen
-gemittelt. Dies geschieht mit der Formel
+Um die im Vielkanalanalysator (siehe Abb. \ref{fig:schaltung}) ankommenden Signale auszuwerten werden die bei der Kalibrierung aufgenommenen Messwerte aus benachbarten Kanälen gemittelt. Dies geschieht mit der Formel
 \begin{equation}
   C=\frac{(C_1 N_1)+(C_2 N_2)}{N_1+N_2}
   \label{kanalmittel}
 \end{equation}
-$C_1$ und $C_2$ sind dabei zwei benachbarte Kanäle und $N_1$ und $N_2$ die zugehörigen Counts.\\
-Diese Behandlung soll das "Verschmieren" der Kalibrierungsbalken minimieren.\\
+$C_1$ und $C_2$ sind dabei zwei benachbarte Kanäle und $N_1$ und $N_2$ die zugehörigen Zählraten.\\
+Diese Behandlung soll das ,,Verschmieren'' der Kalibrierungsbalken minimieren.\\
 \\
 Um die Untergrundrate der Messung zu bestimmen muss zunächst die Anzahl der den Tank durchquerenden Myonen berechnet werden.
 \begin{equation}
@@ -83,7 +70,7 @@ Während der Suchzeit $T_S$ durchqueren dann $n = \bar{N} \cdot T_S$ Myonen den 
 Die Anzahl der Fehlmessungen $N_{\symup{fehl}}$ ergibt sich aus der Multiplikation der Wahrscheinlichkeitsverteilung mit der Anzahl der Startimpulse. Dies entspricht genau dem Fall, dass während der Suchzeit zwei Myonen direkt aufeinander folgend in den Detektor eintreten.
 \begin{equation}
   N_{\symup{fehl}} = \bar{N} \cdot T_S \cdot \exp{(-\bar{N}\cdot T_S)} \cdot N_{\symup{Start}}
-\end{equation}
+\end{equation}\cite{Poisson}.\\
 $N_{\symup{Start}}$ ist dabei ebenfalls mit einem Poissonfehler behaftet. Aufgrund der statistischen Unabhängigkeit ergibt sich für die Untergrundrate schließlich der Zusammenhang:
 \begin{equation}
   \label{eqn:Untergrund}
