@@ -7,7 +7,7 @@ Erhöht man die Frequenz der einfallenden Strahlung, wird ein weiterer deutliche
 \begin{figure}
   \centering
   \includegraphics[width=\textwidth]{plots/csspektrum.JPG}
-  \caption{Energiespektrum eines $\ce{Cs137}$ Gamma-Strahlers\cite{Caesium}
+  \caption{Mithilfe eines NaI Szintillationsdetektors aufgenommenes Energiespektrum eines $\ce{^{137}Cs}$ Gamma-Strahlers\cite{Caesium}}
   \label{fig:Spektrum}
 \end{figure}
 In der Abbildung ist bei $\SI{32}{\kilo\electronvolt}$ zusätzlich der durch Röntgenstrahlung\cite{rontgen} enstehende Photopeak zu sehen.\\
@@ -38,8 +38,9 @@ aufstellen. Nimmt man nun mehr Projektionen auf, als Würfel in der Probe enthal
   \vec{\mu} = \left(\symbf{A}^\symup{T}\symbf{A}\right)^{-1}\cdot\symbf{A}^T \vec{I}
   \label{eqn:mu}
 \end{equation}
-die Absorptionskoeffizienten ermittlen kann. Die zugehörigen Abweichungen sind durch
+die Absorptionskoeffizienten ermittlen kann. Die zugehörigen Abweichungen werden nach
 \begin{equation}
   \sigma_i = \sqrt{\text{diag}\{\left(\symbf{A}^\symup{T}\symbf{A}\right)^{-1}\}}
   \label{eqn:Fehler}
 \end{equation}
+berechnet. Diese Methode wird als Methode der kleinsten Quadrate bezeichnet.
