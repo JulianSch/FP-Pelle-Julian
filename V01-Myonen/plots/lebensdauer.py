@@ -66,7 +66,12 @@ print('halfed =', m/2, '+-', sigma/2)
 ########################################
 print('Lebensdauerbestimmung: ')
 counts = np.genfromtxt('lebensdauer.txt')
+stops = 0
+for i in counts:
+    stops += i
+    print('stops ', stops)
 
+print('stops ', stops)
 #print(c
 #print(len(c))
 #print(c)
@@ -84,7 +89,9 @@ t = np.linspace(0,len(C)-1,len(C))/ct
 params , cov = curve_fit(e, t, C)
 
 plt.plot(t,C, 'y.', label = 'Messwerte')
+plt.errorbar(t,C, yerr=np.sqrt(C), fmt = 'none')
 plt.plot(t, e(t, *params), 'b-', label = 'fit')
+plt.plot([0.09,0.09],[0,350], 'r--', label = 'Totzeit')
 
 print('Fit: ')
 params = correlated_values(params, cov)
@@ -95,7 +102,7 @@ plt.grid()
 plt.legend(loc = 'best')
 plt.xlabel(r'$t/\mu s$')
 plt.ylabel('Counts')
-#plt.yscale('log')
+plt.yscale('log')
 #plt.yscale('log')
 
 
@@ -105,15 +112,17 @@ plt.clf()
 #logcounts = np.log(counts)
 
 No= 2096502
+No = ufloat(No, np.sqrt(No))
 T = 96454
 N = No/T
+
 print('N', N)
 
 n = N*20*10**(-6)
 
-print (n)
+print ('n',n)
 
-nfehl = N*20*10**(-6)*No*np.exp(-n)
+nfehl = N*20*10**(-6)*No*unp.exp(-n)
 
 print(nfehl)
 
