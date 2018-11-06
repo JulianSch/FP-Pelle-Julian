@@ -1,6 +1,6 @@
 # Frequenz in kHz | HMFS: Isotop 1 in Drehungseinheit | I2 in DE | HMF: I1 in DE | I2 in DE |
 #
-98  33.6  56.4  0   0
+98  44.6  56.4  0   0
 194 68.1  91.0  0   0
 296 47.2  82.8  8   8
 393 35.3  81.8  14  14

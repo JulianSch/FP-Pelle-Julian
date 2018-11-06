@@ -1,37 +1,22 @@
 \section{Diskussion}
 \label{sec:Diskussion}
-Das negative Vorzeichen der Magnetfelder in \ref{subsec:erdbfeld} resultiert aus der Antiparallelität zwischen dem Horizontalfeld der Spule und der Erde.
+Aus den linearen Regressionen in Abschnitt \ref{erdfeld}
+In Tabelle \ref{tab:spin} sind die errechneten Kernspins und dazu recherchierte Literaturwerte dargestellt.\\
 \begin{table}[H]
   \centering
-  \caption{Alle zu berechnenden Werte und ggf. recherchierte Literaturwerte.}
-  \label{tab:ergebnisse}
-  \begin{tabular}{c|c|c|c}
-    &ermittelter Wert & Literaturwert & relative Abweichung\\
+  \caption{Vergleich von errechneten Kernspins mit Literaturwerten\cite{2}.}
+  \label{tab:spin}
+  \begin{tabular}{c|c|c}
+    ermittelter Wert & Literaturwert & relative Abweichung\\
     \hline
-    \hline
-    Erdmagnetfeld &$B_{h11} = \SI{11.06 \pm 9.10}{\micro\tesla}$&$B_{\symup{Lit}}=\SI{19.34}{\micro\tesla}$ \cite{1}&157.18\% \\
-    &$B_{h12} = \SI{-21.12 \pm 9.08}{\micro\tesla}$ & $B_{\symup{Lit}}=\SI{19.34}{\micro\tesla}$ \cite{1} & 9.20\%\\
-    &$B_{h21} = \SI{3.88 \pm 9.03}{\micro\tesla}$ &$B_{\symup{Lit}}=\SI{19.34}{\micro\tesla}$ \cite{1}&120.06\%\\
-    &$B_{h22} = \SI{-24.48 \pm 9.44}{\micro\tesla}$ & $B_{\symup{Lit}}=\SI{19.34}{\micro\tesla}$ \cite{1} & 26.58\% \\
-    \hline
-    Landè-Faktor&$\symup{g_{F1}} = 0.6 \pm 0.07$ &-- &-- \\
-    &$\symup{g_{F2}}=0.328\pm0.022$&--&--\\
-    &$\symup{g_{F3}}=0.55\pm0.06$&--&--\\
-    &$\symup{g_{F4}}=0.327\pm0.023$&--&--\\
-    \hline
-    Kernspins&$\symup{I_1}=1.18\pm0.20$&1.5\cite{2}&21.33\%\\
-    &$\symup{I_2}=2.56\pm0.20$&2.5\cite{2}&2.4\%\\
-    &$\symup{I_3}=1.32\pm0.20$&1.5\cite{2}&13.64\%\\
-    &$\symup{I_4}=2.56\pm0.21$&2.5\cite{2}&2.4\%\\
+    $\symup{I_{1A}} = 1.34 \pm 0.05$& 1.5& 10.6\%\\
+    $\symup{I_{1B}} = 2.33 \pm 0.05$& 2.5& 6.8\%\\
+    $\symup{I_{2A}} = 1.38 \pm 0.10$& 1.5& 8\%\\
+    $\symup{I_{2B}} = 2.34 \pm 0.09$& 2.5& 6.4\%\\
   \end{tabular}
 \end{table}
-In Tabelle \ref{tab:ergebnisse} sind alle zu berechnenden Größen mit ihren relativen Abweichungen zu sehen. Aus den errechneten Kernspins kann kann man erkennen, dass es sich bei $\symup{I_1}$ und $\symup{I_3}$ um das Isotop $\symup{^{85}Rb}$ und bei $\symup{I_2}$ und $\symup{I_4}$ um das Isotop $\symup{^{87}Rb}$ handelt.
-Fehler in den Messwerten sind vor allem durch die hohe Lichtempfindlichkeit der Apparatur trotz der Abdeckung zu erwarten. Weitere mögliche Quellen sind zum einen das genaue Einstellen des Frequenzgenerators, sowie genaues Ablesen der Minima auf dem Oszilloskop.
-Da die Magnetfelder die für das Erste Isotop gemessen wurden sehr große Fehler aufweisen, wird vermutet, dass das Horizontalfeld für diese Isotope nicht vollständig abgestellt wurden, sodass sich der y-Achsenabschnitt im Fit stark verschoben ist.
-\subsection{Relativer Fehler}
-Alle relativen Fehler wurden nach der Formel
-\begin{equation*}
-  \tilde{x} = \frac{ \lvert x_{lit} - x_{mess} \rvert}{\lvert x_{lit} \rvert}
-  \cdot 100 \%
-\end{equation*}
-berechnet, dabei bezeichnet $x_{lit}$ den Literaturwert der Messgröße $x_{mess}$.
+Aus den errechneten Kernspins kann man erkennen, dass es sich bei $\symup{I_{1A}}$ und $\symup{I_{2A}}$ um das Isotop $\symup{^{85}Rb}$ und bei $\symup{I_{1B}}$ und $\symup{I_{2B}}$ um das Isotop $\symup{^{87}Rb}$ handelt.
+Die Abschätzungen des quadratischen Zeeman-Effekts ergeben um minimal 5 Größenordnungen kleinere Werte als der lineare Zeeman-Effekt (Tabelle \ref{tab:quad}). Daher sind durch Vernachlässigung des quadratischen Terms kaum Abweichungen zu erwarten.
+Die ermittelten Kernspins weisen nur sehr kleine Abweichungen von den Literaturwerten auf.
+Aus dem ermittelten Isotopenverhältnis \ref{subsec:iso} lässt sich schließen, dass das Isotopenverhältnis deutlich von dem natürlich vorkommenden abweicht.
+Weitere Fehler in den Messwerten sind vor allem durch die hohe Lichtempfindlichkeit der Apparatur trotz der Abdeckung und durch unzureichende Kompensation des Erdmagnetfeldes zu erwarten.

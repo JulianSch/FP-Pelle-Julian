@@ -2150,14 +2150,13 @@
     <bcf:citekey order="5">Anleitung</bcf:citekey>
     <bcf:citekey order="6">Anleitung</bcf:citekey>
     <bcf:citekey order="7">Anleitung</bcf:citekey>
-    <bcf:citekey order="8">1</bcf:citekey>
-    <bcf:citekey order="9">1</bcf:citekey>
-    <bcf:citekey order="10">1</bcf:citekey>
-    <bcf:citekey order="11">1</bcf:citekey>
-    <bcf:citekey order="12">2</bcf:citekey>
+    <bcf:citekey order="8">Anleitung</bcf:citekey>
+    <bcf:citekey order="9">Anleitung</bcf:citekey>
+    <bcf:citekey order="10">Anleitung</bcf:citekey>
+    <bcf:citekey order="11">Anleitung</bcf:citekey>
+    <bcf:citekey order="12">Anleitung</bcf:citekey>
     <bcf:citekey order="13">2</bcf:citekey>
     <bcf:citekey order="14">2</bcf:citekey>
-    <bcf:citekey order="15">2</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nty/global/" type="entry" sortscheme="nty" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

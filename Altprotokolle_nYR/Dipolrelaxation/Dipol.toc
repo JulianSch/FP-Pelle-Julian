@@ -1,0 +1,21 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {section}{\numberline {3}Durchführung}{7}{section.3}
+\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Berechnung der Aktivierungsenergie $W$}{8}{subsection.4.1}
+\contentsline {subsubsection}{\numberline {4.1.1}Korrektur des Untergrundes}{8}{subsubsection.4.1.1}
+\contentsline {subsection}{\numberline {4.2}Berechnung von $W$ aus dem gesamten Kurvenverlauf}{9}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Berechnung der Aktivierungsenergie $W$ über linearen Anstieg}{10}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Mittelung der Aktivierungsenergie $W$}{11}{subsubsection.4.2.2}
+\contentsline {subsection}{\numberline {4.3}Bestimmung der Relaxationszeit}{12}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}Bestimmung der Heizrate $b_\text {heiz}$}{12}{subsubsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.2}Berechnung der der Relaxationszeit}{14}{subsubsection.4.3.2}
+\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}
+\contentsline {section}{\numberline {6}Tabellen}{17}{section.6}
+\contentsline {section}{\numberline {7}Messwerte}{22}{section.7}
+\contentsline {section}{\nonumberline Literatur}{26}{section*.19}

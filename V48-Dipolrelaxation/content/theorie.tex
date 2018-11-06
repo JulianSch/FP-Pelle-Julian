@@ -1,7 +1,7 @@
 \section{Theorie}
 \label{sec:Theorie}
 
-Fügt man in ein Kristalgitter aus einfach positiv geladenen Kationen und einfach negativ geladenen Anionen doppelt positiv geladene Kationen ein, so bilden sich zwischen diesen und im Gitter vorkommenden Fehlstellen Dipolmomente aus. Dies beruht darauf, dass sich im Ursprungsgitter die Ladungen der Anionen und Kationen lokal aufheben und einen global neutralen Kristall ergeben. Das Fehlen eines Kations führt somit zu einer lokalen negativen Ladung, während die doppelt geladenen Kationen zu einem lokalen Überschuss positiver Ladung führen. Dies ist in Abb. \ref{fig:fehlstelle} schematisch dargestellt.
+Werden in ein Kristalgitter aus einfach positiv geladenen Kationen und einfach negativ geladenen Anionen doppelt positiv geladene Kationen eingeführt, so bilden sich zwischen diesen und im Gitter vorkommenden Fehlstellen Dipolmomente aus. Dies beruht darauf, dass sich im Ursprungsgitter die Ladungen der Anionen und Kationen lokal aufheben und einen global neutralen Kristall ergeben. Das Fehlen eines Kations führt somit zu einer lokalen negativen Ladung, während die doppelt geladenen Kationen zu einem lokalen Überschuss positiver Ladung führen. Dies ist in Abb. \ref{fig:fehlstelle} schematisch dargestellt.
 
 \begin{figure}
   \centering
@@ -16,7 +16,7 @@ Diese beiden Faktoren führen dazu, dass durch ein äußeres $E$-Feld ausgelenkt
   \tau (T) = \tau_0 \exp{\left(\frac{W}{kT}\right)}
   \label{eqn:relaxation}
 \end{equation}
-in eine statistische Verteilung über gehen. $\tau_0$ bezeichnet hierbei die sogenannte charakteristische Relaxationszeit. Es lässt sich unter der Bedingung, dass $pE<<KT$ gilt, allerdings nur etwa ein Anteil von
+in eine statistische Verteilung über gehen. $\tau_0$ bezeichnet hierbei die sogenannte charakteristische Relaxationszeit. Es lässt sich unter der Bedingung, dass $pE<<kT$ gilt, allerdings nur ein Anteil von
 \begin{equation}
     y(T) = \frac{pE}{3kT}
 \end{equation}
@@ -49,7 +49,7 @@ Als endgültiger Ausdruck für $j(T)$ findet sich dann
   \label{eqn:jKomplett}
 \end{equation}
 
-Durch Näherung des Integrals wird dieser Ausdruck zu Beginn der Stromkurve\ref{fig:strom-theo}, welche sich über $i(T)=Fj(T)$ mit $F$ als Querschnittsfläche der Probe bestimmen lässt, hinreichend durch
+Durch Näherung des Integrals wird dieser Ausdruck zu Beginn der Stromkurve \ref{fig:strom-theo}, welche sich über $i(T)=Fj(T)$ mit $F$ als Querschnittsfläche der Probe bestimmen lässt, hinreichend durch
 \begin{equation}
   j(T) \approx \frac{p^2 E N_p}{3kT_p\tau_0}\exp{\left(\frac{-W}{kT}\right)}
   \label{eqn:dichtefertig}
@@ -59,7 +59,7 @@ beschrieben.
 \begin{figure}
   \centering
   \includegraphics{./logos/Strom_theorie.PNG}
-  \caption{Erwarteter qualtativer Verlauf des Depolarisationsstromes $i(t)$.\cite{Anleitung}}
+  \caption{Erwarteter qualitativer Verlauf des Depolarisationsstromes $i(t)$ \cite{Anleitung}.}
   \label{fig:strom-theo}
 \end{figure}
 
@@ -73,7 +73,7 @@ berechnen.
 Aus einem gemessenen Verlauf $i(T)$ lässt sich somit $W$ durch die Steigung einer linearen Ausgleichsgeraden an die logarithmierten Verläufe von \eqref{eqn:tau2}, bzw. \eqref{eqn:dichtefertig}, bestimmen.
 Zur Bestimmung von $\tau_0$ betrachtet man die Lage des Maximums von $i(T)$. Dieses liegt nach \eqref{eqn:jKomplett} bei
 \begin{equation}
-  \tau_{max}(T) = \frac{HkT_{max}^2}{W}.
+  \tau_{max}(T) = \frac{kT_{max}^2}{HW}.
   \label{eqn:tau3}
 \end{equation}
 Mit Hilfe dieses Wertes und \eqref{eqn:relaxation} lässt sich nun $\tau_0$ berechnen.

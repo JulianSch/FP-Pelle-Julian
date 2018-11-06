@@ -1,15 +1,17 @@
 [0] Config.pm:354> INFO - This is Biber 2.6
-[1] Config.pm:357> INFO - Logfile is 'build\main.blg'
-[43] biber-MSWIN32:302> INFO - === 
-[80] Biber.pm:359> INFO - Reading 'build\main.bcf'
-[261] Biber.pm:823> INFO - Found 3 citekeys in bib section 0
-[280] Biber.pm:3658> INFO - Processing section 0
-[310] Biber.pm:3828> INFO - Looking for bibtex format file 'lit.bib' for section 0
-[315] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
-[317] bibtex.pm:1282> INFO - Found BibTeX data source 'lit.bib'
-[364] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[365] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[366] Biber.pm:3487> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[366] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
-[372] bbl.pm:597> INFO - Writing 'build\main.bbl' with encoding 'UTF-8'
-[374] bbl.pm:701> INFO - Output to build\main.bbl
+[2] Config.pm:357> INFO - Logfile is 'build\main.blg'
+[72] biber-MSWIN32:302> INFO - === 
+[135] Biber.pm:359> INFO - Reading 'build\main.bcf'
+[353] Biber.pm:823> INFO - Found 2 citekeys in bib section 0
+[387] Biber.pm:3658> INFO - Processing section 0
+[442] Biber.pm:3828> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[448] bibtex.pm:1425> INFO - Decoding LaTeX character macros into UTF-8
+[450] bibtex.pm:1282> INFO - Found BibTeX data source 'lit.bib'
+[482] Utils.pm:164> WARN - BibTeX subsystem: C:\msys64\tmp\CAqmRrUgZI\lit.bib_8116.utf8, line 4, warning: undefined macro "http://129.217.224.2/HOMEPAGE/Anleitung_FPBSc.html"
+[522] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[544] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[551] Biber.pm:3487> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[556] Biber.pm:3493> INFO - No sort tailoring available for locale 'de-DE'
+[588] bbl.pm:597> INFO - Writing 'build\main.bbl' with encoding 'UTF-8'
+[592] bbl.pm:701> INFO - Output to build\main.bbl
+[594] Biber.pm:109> INFO - WARNINGS: 1

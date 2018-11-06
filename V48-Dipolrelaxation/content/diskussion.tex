@@ -1,22 +1,30 @@
 \section{Diskussion}
 \label{sec:Diskussion}
-%\subsection{Relativer Fehler}
-%Alle relativen Fehler wurden nach der Formel
-%\begin{equation*}
-%  \tilde{x} = \frac{ \lvert x_{lit} - x_{mess} \rvert}{\lvert x_{lit} \rvert}
-%  \cdot 100 \%
-%\end{equation*}
-%berechnet, dabei bezeichnet $x_{lit}$ den Literaturwert der Messgröße $x_{mess}$.
+Der Literaturwert für die Aktivierungsenergie in Strontium dotierten Kalium-Bromid Kristallen liegt bei
+\begin{center}
+  $W_{lit} = \SI{0.66}{\electronvolt}$\cite{literaturwert}.
+\end{center}
+Bei Betrachtung der bestimmten Aktivierungsenergien (Tabelle \ref{tab:alen})
+fällt auf, dass beide Methoden auf ein Ergebnis gleicher Größenordnung führen. Allerdings fällt auf, dass die durch Ausgleichsrechnung des Anstiegs des Relaxationsstromes bestimmten Aktivierungsenergien unter denen durch Integration bestimmten liegen.
+\begin{table}[H]
+  \centering
+  \caption{Aktivierungsenergien aus beiden Messmethoden.}
+  \label{tab:alen}
+  \begin{tabular}{c|c|c|c}
+    Anlaufkurve&&Integration&\\
+    \hline
+    $W_1$ & $W_2$ & $W_1^I$ & $W_2^I$\\
+    \hline
+    $0.84\si{\electronvolt}$ & $0.44\si{\electronvolt}$ & $1.14\si{\electronvolt}$ & $1.05\si{\electronvolt}$ \\
+  \end{tabular}
+\end{table}
 
-Bei Betrachtung der bestimmten Aktivierungsenergie
+In der Literatur \cite{literaturwert} ist die Relaxationszeit eines Strontium Dipols durch
 \begin{center}
-  $W_1 = \SI{78}{\zepto\joule}$  $W_2 = \SI{75}{\zepto\joule}$  $W_1^i = k_b m_1 = \SI{102 \pm 6}{\zepto\joule}$  $W_2^i= \SI{93 \pm 4}{\zepto\joule}$
+  $\tau_{lit}$ = $4\cdot10^{-14}\si{\second}$
 \end{center}
-fällt auf, dass beide Methoden auf ein Ergebnis gleicher Größenordnung führen. Allerdings fällt auf, dass die durch Ausgleichsrechnung des Anstiegs des Relaxationsstromes bestimmten Aktivierungsenergien unter denen durch Integration bestimmten liegen. Dies ist darauf zurück zu führen, dass weit weniger Werte berücksichtigt werden können als bei der Integration der gesamten Kurve.
-Verfahrensunabhängige Fehlerquellen sind hierbei die Schwankung der Heizraten $H$, welche u.a. dadurch bedingt sind, dass zu Beginn des Heizvorganges das Temperaturgefälle zwischen Probe und Umgebung sehr stark ist, weshalb die Temperatur ohne zuheizen bereits sehr rapide steigt, wohingegen ab ca. $\SI{50}{\celsius}$ die maximal zur Verfügung stehende Heizleistung aufgebracht werden muss, um die Heizrate nicht zu sehr fallen zu lassen. Zudem ist das verwandte Picoampermeter erschütterungssensitiv.
-Die berechneten charakteristischen Relaxationszeiten
-\begin{center}
-  $\tau_{0,1}= \SI{0.12 \pm 0.19}{\nano\second}$ und $\tau_{0,2} = \SI{2.0 \pm 2.6}{\nano\second}$
-\end{center}
-sind aufgrund ihrer enormen relativen Fehler $\delta_{tau_0,rel}>100\,\%)$ nicht weiter analysierbar.
-% Mögliche Fehlerquellen: Heizrate!! Fehlstellen erschütterungen am picoampeeremeter
+gegeben.
+Die berechneten charakteristischen Relaxationszeiten aus Tabelle \ref{tab:relax} weisen sehr starke Abweichungen vom Literaturwert auf.
+Dies ist vor allem darauf zurückzuführen, dass sich auch schon sehr kleine Fehler in den Aktivierungsenergien stark auf die errechnete Relaxationszeit fortpflanzen, da diese Fehler in die Formeln \eqref{eqn:relaxation} und \eqref{eqn:tau3} exponentiell eingehen.
+
+Verfahrensunabhängige Fehlerquellen sind hierbei die Schwankung der Heizraten $H$, welche unter anderem dadurch bedingt sind, dass zu Beginn des Heizvorganges das Temperaturgefälle zwischen Probe und Umgebung sehr stark ist, weshalb die Temperatur ohne zu heizen bereits sehr rapide steigt, wohingegen ab ca. $\SI{50}{\celsius}$ die maximal zur Verfügung stehende Heizleistung aufgebracht werden muss, um die Heizrate nicht zu sehr fallen zu lassen. Zudem ist das verwandte Picoampermeter erschütterungssensitiv.

@@ -1,0 +1,52 @@
+\section{Diskussion}
+\label{sec:Diskussion}
+Werden die auf die beiden verschiedenen Methoden bestimmten
+Aktivierungsenergien wie in Tabelle \ref{tab:verg} miteinander verglichen,
+lässt sich die Erwartung, dass Methode 2 durch den Einbezug der gesamten
+Messkurve bessere Ergebnisse liefert, verifizieren. In der Tabelle steht $W_{a}$ für
+die mit Methode 1 bestimmte Schwellenenergie und $W_{b}$ für selbige mit Methode 2 bestimmt. Die prozentuale Abweichung
+bezieht sich auf den Literaturwert.
+\begin{table}[H]
+  {\tiny
+  \caption{Vergleich von Literatur \cite{V48a} und Messwerten}
+  \label{tab:verg}
+    \begin{tabular}{S S| S S| S S}
+    \toprule
+  $ \text{Heizrate}  \: / \: \si{\kelvin\per\minute}$
+  & $ \text{Literaturwert}  \: / \: \si{\electronvolt}$
+  & $W_{b} \: / \: \si{\electronvolt}$
+  & $\text{Abweichung} \: / \: \% $
+  & $W_{a} \: / \: \si{\electronvolt}$
+  & $\text{Abweichung} \: / \% $ \\
+\midrule
+1.5 & 0.66 & 0.75 $\pm$ 0.02 & 14 & 0.53 $\pm$ 0.01 & 20 \\
+3.0 & 0.66 & 0.83 $\pm$ 0.02 & 26 & 0.53 $\pm$ 0.02 & 20 \\
+\bottomrule
+\end{tabular}
+}
+\end{table}
+Darüberhinaus fällt auf, dass die Werte der für die beiden verschiedenen Heizraten sich bei der zweiten Methode nur in ihrem
+Fehler unterscheiden, was von einer gelungenen Wahl der Heizspannung zeugt. Auch die Abweichungen von
+lediglich maximal $26\%$ spricht für einer gelungenen Versuchsdurchführung ohne große Fehlerquellen.
+Die teilweise höheren Abweichungen bei Methode 1 lassen sich zum einen durch die schon beschriebenen Fakt erklären,
+dass es sich bei dieser Methode lediglich um eine Näherungsmethode handelt und darüberhinaus der Bereich der Näherungsmethode subjektiv gewählt wurde.
+Da analoge Messinstrumente verwendet wurden kann es zu Ablesungsfehlern gekommen sein, die ob der guten Ergebnisse
+aber keine große Rolle gespielt haben.
+Zu Beginn der Messungen kam es zu großen Varianzen des Depolarisationsstroms, weshalb diese Werte in der Auswertung nicht berücksicchtigt wurden.
+Im Gegensatz zu den gemessenen Ativierungsenergien weisen die berechneten Relaxationszeiten
+\begin{align*}
+  \tau_{0_1} &= \SI{3(2)e-10}{\second} \text{ und}\\
+  \tau_{0_2} &= \SI{42(1)e-11}{\second}
+\end{align*}
+mit einer Differenz von 3 bzw. 4 Größenordnungen einen deutliche Abweichungen vom Literaturwert \cite{V48a}
+\begin{equation*}
+  \tau_0 = \SI{4e-14}{\second}
+\end{equation*}
+auf.
+Auf eine Bestimmung der relativen Abweichung wird auf Grund dieser großen Abweichung verzichtet.
+Gründe für diese Differenz zwischen Literatur- und Messwerten könnte das exponentielle Verhältnis zwischen
+der Aktivierungsenergie $W$ und der Relaxationszeit $\tau_0$ sein (siehe Formel \ref{eqn:tau}).
+So wirkt sich eine kleine Schwankung in der Aktivierungsenergie deutlich in der Berechnung der Relaxationszeit
+aus.
+Jedoch kann dies alleine nicht die Abweichung um minestens 3 Größenordnungen erklären, sondern spricht dafür, dass
+im Experiment und / oder in der Auswertung Vereinfachungen angenommen wurden oder Fehler aufgetreten sind.
